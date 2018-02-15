@@ -4,7 +4,6 @@
       <File FileName="questions/349-ArrayIntersection.cs" Line="2" Column="34" />
       <File FileName="questions/350-ArrayIntersection.cs" Line="33" Column="1" />
       <File FileName="questions/283-MoveZeroes.cs" Line="39" Column="21" />
-      <File FileName="questions/Utils.cs" Line="2" Column="12" />
       <File FileName="leetcode Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
@@ -13,6 +12,6 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.questions PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Questions PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
 </Properties>
