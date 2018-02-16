@@ -1,9 +1,11 @@
 ﻿<Properties StartupConfiguration="{72282739-2DFD-40DD-883E-F0CBA343DF3E}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="leetcode Status">
     <Files>
-      <File FileName="questions/349-ArrayIntersection.cs" Line="2" Column="34" />
-      <File FileName="questions/350-ArrayIntersection.cs" Line="33" Column="1" />
-      <File FileName="questions/283-MoveZeroes.cs" Line="39" Column="21" />
+      <File FileName="questions/349-ArrayIntersection.cs" Line="4" Column="20" />
+      <File FileName="questions/350-ArrayIntersection.cs" Line="4" Column="20" />
+      <File FileName="questions/283-MoveZeroes.cs" Line="4" Column="20" />
+      <File FileName="questions/Program.cs" Line="3" Column="20" />
+      <File FileName="questions/Utils.cs" Line="2" Column="20" />
       <File FileName="leetcode Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
@@ -12,6 +14,6 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Questions PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.questions PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
 </Properties>

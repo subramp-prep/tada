@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Questions
+namespace questions
 {
     class Program
     {

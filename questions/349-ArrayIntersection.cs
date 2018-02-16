@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Questions
+namespace questions
 {
     /// <summary>
     /// Question URL: https://leetcode.com/problems/intersection-of-two-arrays/description/

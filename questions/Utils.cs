@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Questions
+namespace questions
 {
     public class Utils
     {
