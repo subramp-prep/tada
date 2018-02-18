@@ -1,13 +1,8 @@
 ﻿<Properties StartupConfiguration="{72282739-2DFD-40DD-883E-F0CBA343DF3E}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="leetcode Status">
     <Files>
-      <File FileName="questions/349-ArrayIntersection.cs" Line="4" Column="20" />
-      <File FileName="questions/350-ArrayIntersection.cs" Line="4" Column="20" />
-      <File FileName="questions/283-MoveZeroes.cs" Line="4" Column="20" />
-      <File FileName="questions/Program.cs" Line="8" Column="10" />
-      <File FileName="questions/Utils.cs" Line="2" Column="20" />
       <File FileName="questions/15-3Sum.cs" Line="47" Column="11" />
-      <File FileName="Questions/125-ValidPalindrome.cs" Line="42" Column="70" />
+      <File FileName="questions/283-MoveZeroes.cs" Line="4" Column="20" />
       <File FileName="leetcode Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>

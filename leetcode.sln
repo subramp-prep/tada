@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Questions", "Questions\Questions.csproj", "{72282739-2DFD-40DD-883E-F0CBA343DF3E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "questions", "Questions\Questions.csproj", "{72282739-2DFD-40DD-883E-F0CBA343DF3E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sorting", "sorting", "{D801BCAD-3028-4B1C-96B6-3A5EC317FFB5}"
 EndProject
