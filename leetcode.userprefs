@@ -1,20 +1,15 @@
 ﻿<Properties StartupConfiguration="{72282739-2DFD-40DD-883E-F0CBA343DF3E}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="leetcode Status">
     <Files>
-      <File FileName="Questions/questions/125-ValidPalindrome.cs" Line="42" Column="70" />
-      <File FileName="Questions/questions/747-LargestIndexTwice.cs" Line="1" Column="1" />
-      <File FileName="questions/Program.cs" Line="8" Column="10" />
-      <File FileName="questions/questions/350-ArrayIntersection.cs" Line="6" Column="36" />
       <File FileName="leetcode Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/subramonia_prasad/Documents/Github/leetcode/questions/15-3Sum.cs" relfile="questions/15-3Sum.cs" line="40" column="21" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Questions PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.questions PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
 </Properties>
