@@ -7,4 +7,7 @@
     <AssemblyName>questions</AssemblyName>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="questions\" />
+  </ItemGroup>
 </Project>
