@@ -14,7 +14,7 @@ namespace questions
         public static void Permute(string s)
         {
             HashSet<string> set = new HashSet<string>();
-            
+
             PermuteHelper(s, "", set);
         }
 
@@ -46,36 +46,36 @@ namespace questions
             }
         }
 
-		private static void PermuteHelper(string s, string chosen, HashSet<string> set)
-		{
-			if (s.Length == 0)
-			{
+        private static void PermuteHelper(string s, string chosen, HashSet<string> set)
+        {
+            if (s.Length == 0)
+            {
                 if (!set.Contains(chosen))
                 {
                     set.Add(chosen);
                     Console.WriteLine(chosen);
                 }
-			}
-			else
-			{
-				// Step1 Choose
-				// Step2 Explore
-				// Step3 Unchoose
-				for (int index = 0; index < s.Length; index++)
-				{
-					// chooose
-					char c = s[index];
-					chosen += c;
-					s = s.Remove(index, 1);
+            }
+            else
+            {
+                // Step1 Choose
+                // Step2 Explore
+                // Step3 Unchoose
+                for (int index = 0; index < s.Length; index++)
+                {
+                    // chooose
+                    char c = s[index];
+                    chosen += c;
+                    s = s.Remove(index, 1);
 
-					// explore
-					PermuteHelper(s, chosen);
+                    // explore
+                    PermuteHelper(s, chosen);
 
-					//unchoose
-					s = s.Insert(index, c.ToString());
-					chosen = chosen.Remove(chosen.Length - 1);
-				}
-			}
-		}
+                    //unchoose
+                    s = s.Insert(index, c.ToString());
+                    chosen = chosen.Remove(chosen.Length - 1);
+                }
+            }
+        }
     }
 }
