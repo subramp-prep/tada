@@ -5,14 +5,14 @@ namespace questions
 {
     public class ValidParentheses
     {
-		/// <summary>
-		/// Question URL: https://leetcode.com/problems/valid-parentheses/description/
-		/// </summary>
-		/// <returns><c>true</c>, if valid was ised, <c>false</c> otherwise.</returns>
-		/// <param name="s">S.</param>
+        /// <summary>
+        /// Question URL: https://leetcode.com/problems/valid-parentheses/description/
+        /// </summary>
+        /// <returns><c>true</c>, if valid was ised, <c>false</c> otherwise.</returns>
+        /// <param name="s">S.</param>
 
-		public static bool IsValid(string s)
-		{
+        public static bool IsValid(string s)
+        {
             Dictionary<char, char> bracesLookup = new Dictionary<char, char>();
             bracesLookup.Add('(', ')');
             bracesLookup.Add('{', '}');
@@ -30,7 +30,7 @@ namespace questions
                 }
                 else if (element.Equals(')') ||
                          element.Equals('}') ||
-					     element.Equals(']'))
+                         element.Equals(']'))
                 {
                     if (validationStack.Count <= 0)
                     {
