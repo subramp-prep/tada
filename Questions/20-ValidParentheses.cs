@@ -22,15 +22,11 @@ namespace questions
 
             foreach (var element in s)
             {
-                if (element.Equals('(') ||
-                    element.Equals('{') ||
-                    element.Equals('['))
+                if (bracesLookup.ContainsKey(element))
                 {
                     validationStack.Push(element);
                 }
-                else if (element.Equals(')') ||
-                         element.Equals('}') ||
-                         element.Equals(']'))
+                else if (bracesLookup.ContainsValue(element))
                 {
                     if (validationStack.Count <= 0)
                     {
