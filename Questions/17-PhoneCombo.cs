@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace questions
 {
@@ -9,48 +10,51 @@ namespace questions
         /// Question URL: https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/
         /// </summary>
 
-        private static string[] representation = {
-            "",
-            "",
-            "abc",
-            "def",
-            "ghi",
-            "jkl",
-            "mno",
-            "pqrs",
-            "tuv",
-            "wxyz"
+        private static string[] keyboard  = {
+            "",     //0
+            "",     //1 
+            "abc",  //2
+            "def",  //3 
+            "ghi",  //4
+            "jkl",  //5
+            "mno",  //6
+            "pqrs", //7
+            "tuv",  //8
+            "wxyz"  //9
         };
 
         public static IList<string> LetterCombinations(string digits)
         {
-            string[] digitRepresentation = new string[digits.Length];
-            for (int index = 0; index < digits.Length; index++)
-            {
-                digitRepresentation[index] = representation[digits[index] - '0'];
-            }
+            IList<string> combinations = new List<string>();
 
-            return Perform(digitRepresentation);
-        }
-
-        private static IList<string> Perform(string[] digits)
-        {
-            List<string> combinations = new List<string>();
-
-            PerformHelper(digits, "", combinations);
+            var builder = new StringBuilder();
+            Perform(digits, 0, builder, combinations);
 
             return combinations;
         }
 
-        private static void PerformHelper(string[] digits, string combo, List<string> combinations)
+        private static void Perform(string digits, int scanIndex, StringBuilder chosen, IList<string> combinations)
         {
-            if (combo.Length == digits.Length)
+            if (chosen.Length == digits.Length)
             {
-                combinations.Add(combo);
+                if(chosen.Length > 0)
+                    combinations.Add(chosen.ToString());
             }
             else
             {
+                var keyboardIndex = digits[scanIndex] - '0';
+                var letters = keyboard[keyboardIndex];
+
                 // choose -> explore -> unchoose
+                for (int index = 0; index < letters.Length; index++)
+                {
+                    char c = letters[index];
+                    chosen.Append(c);
+
+                    Perform(digits, scanIndex+1, chosen, combinations);
+
+                    chosen.Remove(chosen.Length - 1, 1);
+                }
             }
         }
     }
