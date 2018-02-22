@@ -6,14 +6,14 @@ namespace questions
 {
     public class GenerateCombination
     {
-		/// <summary>
-		/// Question URL: https://leetcode.com/problems/generate-parentheses/description/
-		/// </summary>
+        /// <summary>
+        /// Question URL: https://leetcode.com/problems/generate-parentheses/description/
+        /// </summary>
 
-		private static string _paranthesis = "()";
+        private static string _paranthesis = "()";
 
-		public static IList<string> GenerateParenthesis(int n)
-		{
+        public static IList<string> GenerateParenthesis(int n)
+        {
             string paranthesis = string.Empty;
             for (int index = 0; index < n; index++)
             {
@@ -32,8 +32,8 @@ namespace questions
 
         private static void Permute(string paranthesis, string chosen, HashSet<string> combinations)
         {
-			#region My Implementaton
-			if (paranthesis.Length == 0)
+            #region My Implementaton
+            if (paranthesis.Length == 0)
             {
                 if (!combinations.Contains(chosen) && Utils.ValidParanthesisCombination(chosen))
                 {
@@ -57,8 +57,8 @@ namespace questions
                     paranthesis = paranthesis.Insert(index, c.ToString());
                 }
             }
-			#endregion
-		}
+            #endregion
+        }
 
 
         /// <summary>
@@ -71,19 +71,19 @@ namespace questions
         /// <param name="close">Close.</param>
         /// <param name="max">Max.</param>
         public static void backtrack(HashSet<string> ans, string cur, int open, int close, int max)
-		{
+        {
             if (cur.Length == max * 2)
-			{
+            {
                 ans.Add(cur);
-			}
+            }
             else
             {
-				if (open < max)
-					backtrack(ans, cur + "(", open + 1, close, max);
-                
-				if (close < open)
-					backtrack(ans, cur + ")", open, close + 1, max);
+                if (open < max)
+                    backtrack(ans, cur + "(", open + 1, close, max);
+
+                if (close < open)
+                    backtrack(ans, cur + ")", open, close + 1, max);
             }
-		}
+        }
     }
 }
