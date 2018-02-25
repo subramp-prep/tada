@@ -1,12 +1,5 @@
 ﻿namespace questions
 {
-    public class ListNode
-    {
-        public int val;
-        public ListNode next;
-        public ListNode(int x) { val = x; }
-    }
-
     public class AddTwoNumbers
     {
         /// <summary>
@@ -17,8 +10,8 @@
         /// <param name="l2">L2.</param>
         public ListNode Perform(ListNode l1, ListNode l2)
         {
-            ListNode head = new ListNode(0);
-            ListNode result = head;
+            ListNode dummy = new ListNode(0);
+            ListNode result = dummy;
             int carry = 0;
 
             while (l1 != null || l2 != null || carry > 0)
@@ -46,7 +39,7 @@
                 result = result.next;
             }
 
-            return head.next;
+            return dummy.next;
         }
     }
 }
