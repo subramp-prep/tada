@@ -6,25 +6,26 @@ namespace questions
 		public int val;
 		public ListNode next;
 		public ListNode(int x) { val = x; }
-	}
 
-	public static ListNode AddNodeToTail(ListNode head, ListNode node)
-	{
-		if (head == null)
+
+		public static ListNode AddNodeToTail(ListNode head, ListNode node)
 		{
-			return node;
+			if (head == null)
+			{
+				return node;
+			}
+
+			ListNode cache = null;
+			ListNode temp = head;
+
+			while (temp != null)
+			{
+				cache = temp;
+				temp = temp.next;
+			}
+			cache.next = node;
+
+			return head;
 		}
-
-		ListNode cache = null;
-		ListNode temp = head;
-
-		while (temp != null)
-		{
-			cache = temp;
-			temp = temp.next;
-		}
-		cache.next = node;
-
-		return head;
 	}
 }
