@@ -2,10 +2,12 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="leetcode Status">
     <Files>
       <File FileName="Questions/19-RemoveNNodeFromEnd.cs" Line="42" Column="10" />
-      <File FileName="Questions/ListNode.cs" Line="15" Column="16" />
-      <File FileName="Questions/Program.cs" Line="32" Column="53" />
+      <File FileName="Questions/Concepts/ListNode.cs" Line="34" Column="33" />
+      <File FileName="Questions/Program.cs" Line="9" Column="47" />
       <File FileName="Questions/2-AddTwoNumbers.cs" Line="20" Column="28" />
-      <File FileName="Questions/43-MultiplyStrings.cs" Line="9" Column="9" />
+      <File FileName="Questions/43-MultiplyStrings.cs" Line="54" Column="1" />
+      <File FileName="Questions/Concepts/Backtracking-StringPermutations.cs" Line="29" Column="26" />
+      <File FileName="Questions/17-PhoneCombo.cs" Line="41" Column="26" />
       <File FileName="leetcode Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>

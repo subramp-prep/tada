@@ -10,7 +10,7 @@ namespace questions
         /// Question URL: https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/
         /// </summary>
 
-        private static string[] keyboard  = {
+        private static string[] keyboard = {
             "",     //0
             "",     //1 
             "abc",  //2
@@ -37,7 +37,7 @@ namespace questions
         {
             if (chosen.Length == digits.Length)
             {
-                if(chosen.Length > 0)
+                if (chosen.Length > 0)
                     combinations.Add(chosen.ToString());
             }
             else
@@ -51,7 +51,7 @@ namespace questions
                     char c = letters[index];
                     chosen.Append(c);
 
-                    Perform(digits, scanIndex+1, chosen, combinations);
+                    Perform(digits, scanIndex + 1, chosen, combinations);
 
                     chosen.Remove(chosen.Length - 1, 1);
                 }
