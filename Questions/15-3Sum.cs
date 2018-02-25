@@ -26,7 +26,7 @@ namespace questions
                 }
 
                 int missing = sum - (nums[index1] + nums[index2]);
-                if(hashInt.Contains(missing))
+                if (hashInt.Contains(missing))
                 {
                     IList<int> threeSum = new List<int>();
 
@@ -36,15 +36,15 @@ namespace questions
 
                     result.Add(threeSum);
                 }
-             }
-             return result;
+            }
+            return result;
         }
 
         /// <summary>
         /// Froms the wiki: https://en.wikipedia.org/wiki/3SUM
         /// </summary>
         public static void fromWiki()
-        {}
+        { }
     }
 
 
