@@ -4,12 +4,12 @@ using System.Numerics;
 
 namespace questions
 {
-	/// <summary>
-	/// Question URL: https://leetcode.com/problems/multiply-strings/description/
+    /// <summary>
+    /// Question URL: https://leetcode.com/problems/multiply-strings/description/
     /// 
     /// TODO: Not able to handle VERY LARGE numbers
-	/// </summary>
-	public class MultiplyStrings
+    /// </summary>
+    public class MultiplyStrings
     {
         public static string Multiply(string num1, string num2)
         {
