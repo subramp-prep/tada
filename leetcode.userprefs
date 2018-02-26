@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{72282739-2DFD-40DD-883E-F0CBA343DF3E}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="leetcode Status">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Questions/Concepts/ListNode.cs">
     <Files>
       <File FileName="Questions/Concepts/ListNode.cs" Line="10" Column="9" />
-      <File FileName="leetcode Status" />
+      <File FileName="Questions/46-Permutations.cs" Line="9" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
