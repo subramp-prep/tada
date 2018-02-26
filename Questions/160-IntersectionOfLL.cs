@@ -1,10 +1,10 @@
 ﻿using System;
 namespace questions
 {
-	/// <summary>
-	/// Question URL: https://leetcode.com/problems/intersection-of-two-linked-lists/
-	/// </summary>
-	public class IntersectionOfLL
+    /// <summary>
+    /// Question URL: https://leetcode.com/problems/intersection-of-two-linked-lists/
+    /// </summary>
+    public class IntersectionOfLL
     {
         /// <summary>
         /// Brute force mechanism to find the intersection... Trust me.. Very Boring!!!
@@ -13,8 +13,8 @@ namespace questions
         /// <param name="headA">Head a.</param>
         /// <param name="headB">Head b.</param>
 		public static ListNode GetIntersectionNode(ListNode headA, ListNode headB)
-		{
-            for (ListNode index1 = headA; index1 != null ; index1 = index1.next)
+        {
+            for (ListNode index1 = headA; index1 != null; index1 = index1.next)
             {
                 for (ListNode index2 = headB; index2 != null; index2 = index2.next)
                 {
