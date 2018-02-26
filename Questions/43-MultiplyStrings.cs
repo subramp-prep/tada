@@ -20,7 +20,6 @@ namespace questions
             for (int index2 = num2.Length - 1; index2 >= 0; index2--)
             {
                 BigInteger carry = 0;
-                BigInteger remainder = 0;
                 BigInteger tens = lineItem;
                 BigInteger lineNumber = 0;
 
@@ -29,6 +28,8 @@ namespace questions
                     BigInteger prodVal = ((BigInteger)num1[index1] - '0') * ((BigInteger)num2[index2] - '0');
                     BigInteger product = prodVal + carry;
                     carry = product / 10;
+
+                    BigInteger remainder = 0;
                     remainder = product % 10;
 
                     lineNumber = (tens * remainder + lineNumber);

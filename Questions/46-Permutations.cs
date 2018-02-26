@@ -3,7 +3,10 @@ using System.Linq;
 
 namespace questions
 {
-    public class Permutations
+	/// <summary>
+	/// Question URL https://leetcode.com/problems/permutations
+	/// </summary>
+	public class Permutations
     {
         public static IList<IList<int>> Permute(int[] nums)
         {

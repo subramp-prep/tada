@@ -7,7 +7,6 @@ namespace questions
         public ListNode next;
         public ListNode(int x) { val = x; }
 
-
         public static ListNode AddNodeToTail(ListNode head, ListNode node)
         {
             if (head == null)
@@ -40,6 +39,19 @@ namespace questions
             }
 
             return result;
+        }
+
+        public static int GetCount(ListNode head)
+        {
+            int count = 0;
+
+            while (head != null)
+            {
+                head = head.next;
+                count++;
+            }
+
+            return count;
         }
     }
 }

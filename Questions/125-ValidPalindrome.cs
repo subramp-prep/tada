@@ -47,7 +47,9 @@ namespace questions
         {
             int lIndex = 0;
             int hIndex = content.Length - 1;
-            while (lIndex < hIndex)
+
+			//better comparison than checking for half
+			while (lIndex < hIndex) 
             {
                 if (!char.IsLetterOrDigit(content[lIndex]))
                 {
