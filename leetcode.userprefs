@@ -1,13 +1,11 @@
 ﻿<Properties StartupConfiguration="{72282739-2DFD-40DD-883E-F0CBA343DF3E}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="leetcode Status">
     <Files>
-      <File FileName="Questions/Concepts/ListNode.cs" Line="1" Column="1" />
-      <File FileName="Questions/46-Permutations.cs" Line="1" Column="1" />
-      <File FileName="Questions/Concepts/Backtracking-StringPermutations.cs" Line="82" Column="1" />
-      <File FileName="Questions/Program.cs" Line="1" Column="1" />
-      <File FileName="Questions/43-MultiplyStrings.cs" Line="1" Column="1" />
-      <File FileName="Questions/19-RemoveNNodeFromEnd.cs" Line="1" Column="1" />
-      <File FileName="Questions/160-IntersectionOfLL.cs" Line="1" Column="1" />
+      <File FileName="Questions/49-GroupAnagrams.cs" Line="20" Column="17" />
+      <File FileName="Questions/242-ValidAnagram.cs" Line="18" Column="5" />
+      <File FileName="Questions/Program.cs" Line="9" Column="47" />
+      <File FileName="Questions/283-MoveZeroes.cs" Line="1" Column="1" />
+      <File FileName="Questions/266-PalindromePermutation.cs" Line="12" Column="5" />
       <File FileName="leetcode Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
