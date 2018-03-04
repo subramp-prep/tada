@@ -59,5 +59,32 @@ namespace questions
 
             return (validator.Count == 0);
         }
+
+        public static bool IsAnagramSort(string s, string t)
+        {
+            if (s.Length != t.Length)
+            {
+                return false;
+            }
+
+            int[] sChars = new int[26];
+            int[] tChars = new int[26];
+
+            for (int index = 0; index < s.Length; index++)
+            {
+                sChars[s[index] - 'a'] += 1;
+                tChars[t[index] - 'a'] += 1;
+            }
+
+            for (int index = 0; index < sChars.Length; index++)
+            {
+                if (tChars[index] != sChars[index])
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
     }
 }
