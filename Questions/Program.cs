@@ -8,8 +8,6 @@ namespace questions
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-
-            Test_PeakIndex();
         }
 
         public static void Test_Backtracking_SubLists()
@@ -27,6 +25,15 @@ namespace questions
         {
             int[] nums = { 1, 2, 3, 1 };
             FindPeak.FindPeakElement(nums);
+        }
+
+        public static void Test_MergeSortedArray()
+        {
+            int[] num1 = { 0, 0 };
+            int[] num2 = { 1 };
+
+
+            MergeSortedArray.Merge(num1, 1, num2, num2.Length);
         }
     }
 }
