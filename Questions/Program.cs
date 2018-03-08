@@ -8,9 +8,6 @@ namespace questions
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-
-
-            Test_MergeList();
         }
 
         public static void Test_Backtracking_SubLists()
@@ -69,7 +66,13 @@ namespace questions
             };
 
             MergeSortedLists.MergeTwoLists(node1, node2);
-                
+        }
+
+        public static void Test_MergeSort()
+        {
+            int[] nums = { 25, 7, 3, 23, 15, 60, 63, 52, 49 };
+
+            MergeSort.Sort(nums);
         }
     }
 }
