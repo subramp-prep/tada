@@ -8,6 +8,9 @@ namespace questions
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+
+            Test_MergeList();
         }
 
         public static void Test_Backtracking_SubLists()
@@ -34,6 +37,39 @@ namespace questions
 
 
             MergeSortedArray.Merge(num1, 1, num2, num2.Length);
+        }
+
+        public static void Test_SearcRotatedSortArray()
+        {
+            int[] nums = {4,5,6,7,0,1,2 };
+
+            SearchInSorted.search(nums, 2);
+        }
+
+        public static void Test_MergeList()
+        {
+            ListNode node1 = new ListNode(1)
+            {
+                next = new ListNode(2)
+                {
+                    next = new ListNode(4)
+                    {
+                    }
+                }
+            };
+
+            ListNode node2 = new ListNode(1)
+            {
+                next = new ListNode(3)
+                {
+                    next = new ListNode(4)
+                    { 
+                    }
+                }
+            };
+
+            MergeSortedLists.MergeTwoLists(node1, node2);
+                
         }
     }
 }
