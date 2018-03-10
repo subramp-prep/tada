@@ -84,7 +84,7 @@ namespace questions
 
         public static int Test_RomanToInteger(string input)
         {
-            return RomanToInteger.Perform(input);
+            return RomanToInteger.Perform_Optimum(input);
         }
     }
 }
