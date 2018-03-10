@@ -74,5 +74,17 @@ namespace questions
 
             MergeSort.Sort(nums);
         }
+
+        public static void Test_FindBadVersion()
+        {
+            FirstBadVersion.Initialize();
+
+            Console.WriteLine(FirstBadVersion.FindBadVersion(10));
+        }
+
+        public static int Test_RomanToInteger(string input)
+        {
+            return RomanToInteger.Perform(input);
+        }
     }
 }
