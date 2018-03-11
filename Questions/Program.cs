@@ -8,7 +8,6 @@ namespace questions
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Test_Subsets();
         }
 
         public static void Test_Backtracking_SubLists()
@@ -129,6 +128,11 @@ namespace questions
         {
             int[] nums = {1, 2, 3};
             Subsets.Perform(nums);
+        }
+
+        public static void Test_BinaryWatch()
+        {
+            BinaryWatch.ReadBinaryWatch_Optimum(3);
         }
     }
 }
