@@ -38,7 +38,7 @@ namespace questions
 
         public static void Test_SearcRotatedSortArray()
         {
-            int[] nums = {4,5,6,7,0,1,2 };
+            int[] nums = { 4, 5, 6, 7, 0, 1, 2 };
 
             SearchInSorted.search(nums, 2);
         }
@@ -60,7 +60,7 @@ namespace questions
                 next = new ListNode(3)
                 {
                     next = new ListNode(4)
-                    { 
+                    {
                     }
                 }
             };
@@ -85,6 +85,34 @@ namespace questions
         public static int Test_RomanToInteger(string input)
         {
             return RomanToInteger.Perform_Optimum(input);
+        }
+
+        public static void Test_ContiguousArray()
+        {
+            int[] nums = { 0, 0, 0, 1, 1, 1, 0, 0 };
+            Console.WriteLine(ContiguousArray.FindMaxLength_Correect(nums));
+        }
+
+        public static void Test_MaxSizeSubarray()
+        {
+            int[] nums = { -2, -1, 2, 1 };
+            MaximumSize.FindMaxSubarray(nums, 1);
+        }
+
+        public static void Test_MaximumSubarray()
+        {
+            int[] nums = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+            Console.WriteLine(MaximumSubarray.MaxSubArray_Optimum(nums));
+        }
+
+        public static void Test_BuySellStock()
+        {
+            int[] prices = { 7, 1, 5, 3, 6, 4 };
+            Console.WriteLine("Trial1: {0}", BuySellStock.MaxProfit_Optimum(prices));
+
+
+            int[] noSell = {7, 6, 4, 3, 1};
+            Console.WriteLine("Trial2: {0}", BuySellStock.MaxProfit_Optimum(noSell));
         }
     }
 }
