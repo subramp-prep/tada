@@ -8,6 +8,7 @@ namespace questions
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            Test_Subsets();
         }
 
         public static void Test_Backtracking_SubLists()
@@ -113,6 +114,21 @@ namespace questions
 
             int[] noSell = {7, 6, 4, 3, 1};
             Console.WriteLine("Trial2: {0}", BuySellStock.MaxProfit_Optimum(noSell));
+        }
+
+        public static void Test_LetterCasePermutation()
+        {
+            var output = LetterCasePermutation.LetterPermutation("a1b2");
+            foreach (var item in output)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+        public static void Test_Subsets()
+        {
+            int[] nums = {1, 2, 3};
+            Subsets.Perform(nums);
         }
     }
 }

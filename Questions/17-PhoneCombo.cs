@@ -33,16 +33,16 @@ namespace questions
             return combinations;
         }
 
-        private static void Perform(string digits, int scanIndex, StringBuilder chosen, IList<string> combinations)
+        private static void Perform(string input, int scanIndex, StringBuilder chosen, IList<string> combinations)
         {
-            if (chosen.Length == digits.Length)
+            if (chosen.Length == input.Length)
             {
                 if (chosen.Length > 0)
                     combinations.Add(chosen.ToString());
             }
             else
             {
-                var keyboardIndex = digits[scanIndex] - '0';
+                var keyboardIndex = input[scanIndex] - '0';
                 var letters = keyboard[keyboardIndex];
 
                 // choose -> explore -> unchoose
@@ -51,7 +51,7 @@ namespace questions
                     char c = letters[index];
                     chosen.Append(c);
 
-                    Perform(digits, scanIndex + 1, chosen, combinations);
+                    Perform(input, scanIndex + 1, chosen, combinations);
 
                     chosen.Remove(chosen.Length - 1, 1);
                 }
