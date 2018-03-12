@@ -134,5 +134,11 @@ namespace questions
         {
             BinaryWatch.ReadBinaryWatch_Optimum(3);
         }
+
+        public static void Test_NumberOfBits()
+        {
+            NumberOfBits.HammingWeight(5);
+            NumberOfBits.HammingWeight(4294967295);    
+        }
     }
 }
