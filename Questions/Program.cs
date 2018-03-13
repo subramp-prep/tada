@@ -84,7 +84,7 @@ namespace questions
 
         public static int Test_RomanToInteger(string input)
         {
-            return RomanToInteger.Perform_Optimum(input);
+            return RomanToInteger.Perform_EPI(input);
         }
 
         public static void Test_ContiguousArray()
@@ -139,6 +139,17 @@ namespace questions
         {
             NumberOfBits.HammingWeight(5);
             NumberOfBits.HammingWeight(4294967295);    
+        }
+
+        public static void Test_CountAndSay()
+        {
+            CountAndSay.LookAnSay_EPI(5);
+        }
+
+        public static void Test_StringCompression()
+        {
+            char[] input = { 'a', 'a', 'b', 'b', 'c', 'c', 'c' };
+            Console.WriteLine(StringCompression.Compress(input));
         }
     }
 }

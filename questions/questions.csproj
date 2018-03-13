@@ -10,7 +10,4 @@
   <ItemGroup>
     <Folder Include="Concepts\" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="38-CountAndSay.cs" />
-  </ItemGroup>
 </Project>

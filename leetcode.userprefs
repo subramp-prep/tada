@@ -1,8 +1,11 @@
 ﻿<Properties StartupConfiguration="{72282739-2DFD-40DD-883E-F0CBA343DF3E}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="leetcode Status">
     <Files>
-      <File FileName="Questions/191-NumberOfBits.cs" Line="19" Column="28" />
-      <File FileName="Questions/Program.cs" Line="10" Column="47" />
+      <File FileName="Questions/Program.cs" Line="13" Column="18" />
+      <File FileName="Questions/443-StringCompression.cs" Line="39" Column="37" />
+      <File FileName="Questions/38-CountAndSay.cs" Line="68" Column="1" />
+      <File FileName="Questions/236-LCABT.cs" Line="28" Column="14" />
+      <File FileName="Questions/13-RomanToInteger.cs" Line="130" Column="41" />
       <File FileName="leetcode Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>

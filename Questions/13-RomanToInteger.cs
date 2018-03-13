@@ -126,5 +126,33 @@ namespace questions
 
             return number;
         }
+
+        // Beats 100% prior submissions 
+        public static int Perform_EPI(string roman)
+        {
+            Dictionary<char, int> _lookup = new Dictionary<char, int>();
+            _lookup.Add('I', 1);
+            _lookup.Add('V', 5);
+            _lookup.Add('X', 10);
+            _lookup.Add('L', 50);
+            _lookup.Add('C', 100);
+            _lookup.Add('D', 500);
+            _lookup.Add('M', 1000);
+
+            int number = _lookup[roman[roman.Length - 1]];
+            for (int index = roman.Length - 2; index >= 0; --index)
+            {
+                if (_lookup[roman[index]] < _lookup[roman[index+1]])
+                {
+                    number -= _lookup[roman[index]];
+                }
+                else
+                {
+                    number += _lookup[roman[index]];
+                }
+            }
+
+            return number;
+        }
     }
 }
