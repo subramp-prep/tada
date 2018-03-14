@@ -4,10 +4,10 @@ using System.Linq;
 
 namespace questions
 {
-	/// <summary>
-	/// Question URL https://leetcode.com/problems/count-and-say/description/
-	/// </summary>
-	public class CountAndSay
+    /// <summary>
+    /// Question URL https://leetcode.com/problems/count-and-say/description/
+    /// </summary>
+    public class CountAndSay
     {
         /// <summary>
         /// Note: Didnt go well!!! 
@@ -16,8 +16,8 @@ namespace questions
         /// <returns>The perform.</returns>
         /// <param name="n">N.</param>
 
-        public static string  Perform(int n)
-		{
+        public static string Perform(int n)
+        {
             int[] counter = new int[10];
             while (n > 0)
             {
@@ -28,7 +28,7 @@ namespace questions
             }
 
             string output = string.Empty;
-            for (int index = 9; index >=0; index--)
+            for (int index = 9; index >= 0; index--)
             {
                 if (counter[index] > 0)
                 {
@@ -37,7 +37,7 @@ namespace questions
             }
 
             return output;
-		}
+        }
 
         // Implementation from EPI
         public static string LookAnSay_EPI(int n)
@@ -57,7 +57,7 @@ namespace questions
             for (int index = 0; index < s.Length; index++)
             {
                 int count = 1;
-                while (index +1 < s.Length && s[index] == s[index + 1])
+                while (index + 1 < s.Length && s[index] == s[index + 1])
                 {
                     ++index; ++count;
                 }
