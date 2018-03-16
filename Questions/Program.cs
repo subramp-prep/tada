@@ -151,5 +151,20 @@ namespace questions
             char[] input = { 'a', 'a', 'b', 'b', 'c', 'c', 'c' };
             Console.WriteLine(StringCompression.Compress(input));
         }
+
+        public static void Test_MaximumSizeSubarray()
+        {
+            int[] nums = { 1, -1, 5, -2, 3 };
+            Console.WriteLine(MaximumSizeSubarray.MaxSubArrayLen_Optimum(nums, 3));
+
+            int[] nums1 = { -2, -1, 2, 1 };
+            Console.WriteLine(MaximumSizeSubarray.MaxSubArrayLen_Optimum(nums1, 1));
+
+            int[] nums2 = { -2,1,-3,4,-1,2,1,-5,4};
+            Console.WriteLine(MaximumSizeSubarray.MaxSubArrayLen_Optimum(nums2, 1));
+
+            int[] nums3 = { 3, 4, 7, 2, -3, 1, 4, 2 };
+            Console.WriteLine(MaximumSizeSubarray.MaxSubArrayLen_Optimum(nums3, 7));
+        }
     }
 }
