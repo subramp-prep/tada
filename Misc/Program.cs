@@ -22,7 +22,7 @@ namespace Misc
             IList<IList<int>> vec2d = new List<IList<int>>();
 
             vec2d.Add(new List<int>(new int[] { 1, 2 }));
-            vec2d.Add(new List<int>(new int[] { 4 }));
+            vec2d.Add(new List<int>(new int[] { 3 }));
             vec2d.Add(new List<int>(new int[] { 4,5,6 }));
                 
             Vector2D i = new Vector2D(vec2d);
