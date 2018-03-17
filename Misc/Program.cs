@@ -9,7 +9,15 @@ namespace Misc
         {
             Console.WriteLine("Hello World!");
 
-            Test_Vector2D();
+            Test_GridTraversal();
+        }
+
+        public static void Test_GridTraversal()
+        {
+            GridTraversal grid = new GridTraversal();
+
+            int[,] path = new int[8,8];
+            int count = grid.CountPaths_DP(0 ,0, path);
         }
 
         public static void Test_isPower()
