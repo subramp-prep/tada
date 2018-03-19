@@ -35,7 +35,6 @@ namespace Misc
             _x = 0;
             _y = 0;
 
-            _elementCount = 0;
             foreach (var x in vec2d)
             {
                 for (int i = 0; i < x.Count; i++)

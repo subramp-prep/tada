@@ -35,6 +35,8 @@
     <Compile Include="isPower.cs" />
     <Compile Include="Flatten2DVector.cs" />
     <Compile Include="GridTraversal.cs" />
+    <Compile Include="SecondLargesInArray.cs" />
+    <Compile Include="ArrayDiagonalSum.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="FB.md" />

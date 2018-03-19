@@ -8,8 +8,39 @@ namespace Misc
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+        }
 
-            Test_GridTraversal();
+        public static void Test_ArrayDiagonalSum()
+        {
+            int[,] nums = new int[,] {
+                {1, 2, 3, 4},
+                {1, 2, 3, 4},
+                {1, 2, 3, 4},
+                {1, 2, 3, 4}
+            };
+            
+            Console.WriteLine(ArrayDiagonalSum.DiagSum(nums,4));    
+        }
+
+        public static void Test_SecondLargestArrayElement()
+        {
+            int[] nums = { 1, -2, 3, 4};
+            Console.WriteLine(SecondLargesInArray.DetermineElement(nums));
+
+            int[] nums1 = { 1, 3,4,5,0,2 };
+            Console.WriteLine(SecondLargesInArray.DetermineElement(nums1));
+
+            int[] nums2 = { -2, -1 };
+            Console.WriteLine(SecondLargesInArray.DetermineElement(nums2));
+
+            int[] nums5 = { 2, 2, 1 };
+            Console.WriteLine(SecondLargesInArray.DetermineElement(nums5));
+
+            int[] nums3 = { 2 };
+            Console.WriteLine(SecondLargesInArray.DetermineElement(nums3));
+
+            int[] nums4 = {  };
+            Console.WriteLine(SecondLargesInArray.DetermineElement(nums4));
         }
 
         public static void Test_GridTraversal()
@@ -32,6 +63,13 @@ namespace Misc
             vec2d.Add(new List<int>(new int[] { 1, 2 }));
             vec2d.Add(new List<int>(new int[] { 3 }));
             vec2d.Add(new List<int>(new int[] { 4,5,6 }));
+
+            int[][] arrary2d = new int [][] 
+            { 
+                new int[] {1,2},
+                new int[] {3},
+                new int[] {4,5,6}
+            };
                 
             Vector2D i = new Vector2D(vec2d);
             while (i.HasNext()) 

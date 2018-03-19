@@ -9,5 +9,6 @@
 
   <ItemGroup>
     <Folder Include="Concepts\" />
+    <Folder Include="Concepts\Sort\" />
   </ItemGroup>
 </Project>

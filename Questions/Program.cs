@@ -9,9 +9,40 @@ namespace questions
         {
             Console.WriteLine("Hello World!");
 
-            Test_MinSizeSubarray();
+            Test_RemoveLLElement();
             //Test_NumArray(); TODO
             
+        }
+
+        public static void Test_RemoveLLElement()
+        {
+            ListNode node1 = new ListNode(1)
+            {
+                next = new ListNode(2)
+                {
+                    next = new ListNode(6)
+                    {
+                        next = new ListNode(3)
+                        {
+                            next = new ListNode(4)
+                            {
+                                next = new ListNode(5)
+                                {
+                                    next = new ListNode(6)
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+
+            ListNode final = RemoveLLElement.RemoveElements(node1, 6);
+        }
+
+        public static void Test_RemoveArrayElement()
+        {
+            int[] nums = { 3, 2, 2, 3 };
+            Console.WriteLine(RemoveArrayElement.RemoveElement(nums, 3));
         }
 
         public static void Test_MinSizeSubarray()
