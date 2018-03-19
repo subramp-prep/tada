@@ -8,10 +8,12 @@ namespace questions
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-
-            Test_RemoveLLElement();
-            //Test_NumArray(); TODO
             
+        }
+
+        public static void Test_ImplementStrStr()
+        {
+            Console.WriteLine(ImplementStrStr.strStr("mississippi", "issip"));
         }
 
         public static void Test_RemoveLLElement()
