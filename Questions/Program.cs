@@ -8,7 +8,48 @@ namespace questions
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+        }
+
+        public static void Test_ValidateBST()
+        {
+            int[] nums = { 1,1 };
+            TreeNode root = TreeNode.BuildTree(nums);
+
+            Console.WriteLine(ValidateBST.IsValidBST(root));
+        }
+
+        public static void Test_TreeSumLeft()
+        {
+            int[] nums = {1, 2, 3, 4, 5};
+            TreeNode root = TreeNode.BuildTree(nums);
+
+            Console.WriteLine(TreeSumLeft.SumOfLeftLeaves(root));
+        }
+
+        public static void Test_TreeTraversal()
+        {
+            TreeNode root = TreeNode.BuildSampleTree();
             
+            Console.WriteLine("***InOrder***");
+            TreeNode.InOrder(root);
+
+            Console.WriteLine("***PreOrder***");
+            TreeNode.PreOrder(root);
+
+            Console.WriteLine("***PostOrder***");
+            TreeNode.PostOrder(root);
+        }
+
+        public static void Test_MinSizeSubarray()
+        {
+            int[] nums = { 2, 3, 1, 2, 4, 3};
+            Console.WriteLine(MinSizeSubarray.MinSubArrayLen( 7, nums));
+
+            int[] nums1 = { 1,4,4 };
+            Console.WriteLine(MinSizeSubarray.MinSubArrayLen(4, nums1));
+
+            int[] nums3 = { 1,2,3,4,5};
+            Console.WriteLine(MinSizeSubarray.MinSubArrayLen(15, nums3));
         }
 
         public static void Test_ImplementStrStr()
@@ -45,13 +86,6 @@ namespace questions
         {
             int[] nums = { 3, 2, 2, 3 };
             Console.WriteLine(RemoveArrayElement.RemoveElement(nums, 3));
-        }
-
-        public static void Test_MinSizeSubarray()
-        {
-            int[] nums = { 2, 3, 1, 2, 4, 3 };
-            int size = MinSizeSubarray.MinSubArrayLen(7, nums);
-                
         }
 
         public static void Test_ReverseLL()

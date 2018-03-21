@@ -12,7 +12,36 @@ namespace questions
             val = x; 
         }
 
-        public void InOrder(TreeNode root)
+        public static TreeNode BuildSampleTree()
+        {
+            TreeNode root = new TreeNode(3);
+            TreeNode B = root.left = new TreeNode(9);
+            TreeNode C = root.right = new TreeNode(20);
+            C.left = new TreeNode(15);
+            C.right = new TreeNode(7);
+
+            return root;
+        }
+
+        public static TreeNode BuildTree(int[] nums)
+        {
+            return BuildTreeLevelOrder(nums, null, 0);
+        }
+
+        private static TreeNode BuildTreeLevelOrder(int[] nums, TreeNode root, int i)
+        {
+            if (i < nums.Length)
+            {
+                root = new TreeNode(nums[i]);
+
+                root.left = BuildTreeLevelOrder(nums, root.left, 2 * i + 1);
+                root.right = BuildTreeLevelOrder(nums, root.right, 2 * i + 2);
+            }
+
+            return root;
+        }
+
+        public static void InOrder(TreeNode root)
         {
             if (root == null)
             {
@@ -24,7 +53,7 @@ namespace questions
             InOrder(root.right);
         }
 
-        public void PreOrder(TreeNode root)
+        public static void PreOrder(TreeNode root)
         {
             if (root == null)
             {
@@ -36,7 +65,7 @@ namespace questions
             PreOrder(root.right);
         }
 
-        public void PostOrder(TreeNode root)
+        public static void PostOrder(TreeNode root)
         {
             if (root == null)
             {

@@ -20,10 +20,32 @@ namespace questions
         //try coding another solution of which the time complexity is O(n log n).
         public static int MinSubArrayLen(int s, int[] nums)
         {
-            int minSize = 0;
-            // TODO pending implementation
+            int ?minSize = null;
 
-            return minSize;
+            for (int i = 0; i < nums.Length; i++)
+            {
+                int sum = nums[i];
+                int count = 1;
+                if (sum >= s)
+                {
+                    minSize = minSize.HasValue ?
+                                     Math.Min(minSize.Value, count) :
+                                     count;
+                }
+
+                for (int j = i + 1; j < nums.Length; j++)
+                {
+                    sum += nums[j]; count++;
+                    if (sum >= s)
+                    {
+                        minSize = minSize.HasValue ? 
+                                         Math.Min(minSize.Value, count) : 
+                                         count;
+                    }
+                }
+            }
+
+            return minSize.HasValue ? minSize.Value : 0;
         }
     }
 }
