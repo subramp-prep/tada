@@ -41,6 +41,24 @@ namespace questions
             return root;
         }
 
+        public static TreeNode BuildNullableTree(int?[] nums)
+        {
+            return BuildNullableTreeLevelOrder(nums, null, 0);
+        }
+
+        private static TreeNode BuildNullableTreeLevelOrder(int?[] nums, TreeNode root, int i)
+        {
+            if (i < nums.Length )
+            {
+                root = new TreeNode(nums[i].HasValue ? nums[i].Value : 0);
+
+                root.left = BuildNullableTreeLevelOrder(nums, root.left, 2 * i + 1);
+                root.right = BuildNullableTreeLevelOrder(nums, root.right, 2 * i + 2);
+            }
+
+            return root;
+        }
+
         public static void InOrder(TreeNode root)
         {
             if (root == null)

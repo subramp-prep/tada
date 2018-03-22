@@ -3,20 +3,20 @@ using System.Collections.Generic;
 
 namespace questions
 {
-    public class MergeSort
+    public class Merge
     {
         public static void Sort(int[] nums)
         {
-            Merge(nums, 0, nums.Length - 1);
+            Sort(nums, 0, nums.Length - 1);
         }
 
-        private static void Merge(int[] nums, int lo, int hi)
+        private static void Sort(int[] nums, int lo, int hi)
         {
             if (lo < hi)
             {
                 int mid = (lo + hi) / 2;
-                Merge(nums, lo,  mid);
-                Merge(nums, mid + 1, hi);
+                Sort(nums, lo,  mid);
+                Sort(nums, mid + 1, hi);
 
                 MergeSortHelper(nums, lo, mid, hi);
             }

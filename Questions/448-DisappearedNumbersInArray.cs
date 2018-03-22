@@ -21,7 +21,22 @@ namespace questions
         {
             IList<int> missingNumbers = new List<int>();
 
-            // TODO Pending implementation
+            for (int i = 0; i < nums.Length; i++)
+            {
+                int index = Math.Abs(nums[i]) - 1;
+                if (nums[index] > 0)
+                {
+                    nums[index] = -nums[index];
+                }
+            }
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] > 0)
+                {
+                    missingNumbers.Add(i + 1);
+                }
+            }
 
             return missingNumbers;
         }

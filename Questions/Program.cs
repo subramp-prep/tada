@@ -10,6 +10,38 @@ namespace questions
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_KthLargestElement()
+        {
+            int?[] nums = {19,7,43,3,11,23,47,2,5,null,17,37,null, 53,null, 
+                null, null, null,null, null, null, null,null, null, null, 
+                null,null, null, null, null  };
+            
+            TreeNode tree = TreeNode.BuildNullableTree(nums);
+
+            var elements = KthLargestElement.FindElements(tree, 3);
+        }
+
+        public static void Test_BubbleSortOptimum()
+        {
+            int[] nums = { 5, 1, 4, 89, 2, 3, 44, 100, 98, 67, 45, 99, 56, 43, 12, 67 };
+
+            Bubble.Sort_Optimum(nums);
+        }
+
+        public static void Test_BubbleSort()
+        {
+            int[] nums = { 5, 1, 4, 89, 2, 3, 44, 100, 98, 67, 45, 99, 56, 43, 12, 67 };
+
+            Bubble.Sort(nums);
+        }
+
+        public static void Test_SelectionSort()
+        {
+            int[] nums = { 5, 1, 4, 89, 2, 3, 44};
+
+            Selection.Sort(nums);
+        }
+
         public static void Test_ValidateBST()
         {
             int[] nums = { 1,1 };
@@ -208,7 +240,7 @@ namespace questions
         {
             int[] nums = { 25, 7, 3, 23, 15, 60, 63, 52, 49 };
 
-            MergeSort.Sort(nums);
+            Merge.Sort(nums);
         }
 
         public static void Test_FindBadVersion()
