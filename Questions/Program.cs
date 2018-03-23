@@ -10,6 +10,33 @@ namespace questions
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_PathSumII()
+        {
+            int?[] nums = { 5,4,8,11,null, 13,4,7,2,null,null, null, null ,5,1};
+
+            TreeNode root = TreeNode.BuildNullableTree(nums);
+
+            PathSumII.PathSum(root, 22);
+
+            int?[] nums1 = {  };
+
+            TreeNode root1 = TreeNode.BuildNullableTree(nums1);
+            PathSumII.PathSum(root1, 1);
+        }
+
+        public static void Test_BinaryTreePath()
+        {
+            int[] nums = { 1,2,3,4,5,6 };
+            TreeNode root = TreeNode.BuildTree(nums);
+
+            BinaryTreePath.BinaryTreePaths(root);
+        }
+
+        public static void Test_AddStrings()
+        {
+            Console.WriteLine(AddString.AddStrings("0", "0"));
+        }
+
         public static void Test_KthLargestElement()
         {
             int?[] nums = {19,7,43,3,11,23,47,2,5,null,17,37,null, 53,null, 

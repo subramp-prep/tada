@@ -50,10 +50,13 @@ namespace questions
         {
             if (i < nums.Length )
             {
-                root = new TreeNode(nums[i].HasValue ? nums[i].Value : 0);
+                root = nums[i].HasValue? new TreeNode(nums[i].Value) : null;
 
-                root.left = BuildNullableTreeLevelOrder(nums, root.left, 2 * i + 1);
-                root.right = BuildNullableTreeLevelOrder(nums, root.right, 2 * i + 2);
+                if (root != null)
+                {
+                    root.left = BuildNullableTreeLevelOrder(nums, root.left, 2 * i + 1);
+                    root.right = BuildNullableTreeLevelOrder(nums, root.right, 2 * i + 2);
+                }
             }
 
             return root;
