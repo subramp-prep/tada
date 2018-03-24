@@ -10,6 +10,27 @@ namespace questions
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_TotalHamming()
+        {
+            int[] nums = { 4, 14, 2};
+            Console.WriteLine(TotalHamming.TotalHammingDistance(nums));
+        }
+
+        public static void Test_HammingDistance()
+        {
+            Console.WriteLine(Hamming.Distance(4, 1));
+            Console.WriteLine(Hamming.Distance(5, 2));
+
+
+            Console.WriteLine(Hamming.Distance(10, 3));
+        }
+
+        public static void Test_RemoveDuplicatesII()
+        {
+            int[] nums = { 1,1,1,2,2,3};
+            RemoveDuplicatesII.RemoveDuplicates(nums);
+        }
+
         public static void Test_PathSumIII()
         {
             //{ 10, 5, -3, 3, 2, null, 11, 3, -2, null, 1 };
