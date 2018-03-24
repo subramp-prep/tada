@@ -10,6 +10,22 @@ namespace questions
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_PathSumIII()
+        {
+            //{ 10, 5, -3, 3, 2, null, 11, 3, -2, null, 1 };
+            int?[] nums = { 0, 1, 1 };
+            TreeNode root = TreeNode.BuildNullableTree(nums);
+            
+            Console.WriteLine(PathSumIII.PathSum(root, 8));
+        }
+
+        public static void Test_Power()
+        {
+            Console.WriteLine(Power.MyPow_EPI(2.10000, 3));
+
+            Console.WriteLine(Power.MyPow_EPI(34.00515, -3));
+        }
+
         public static void Test_PathSumII()
         {
             int?[] nums = { 5,4,8,11,null, 13,4,7,2,null,null, null, null ,5,1};
@@ -177,11 +193,13 @@ namespace questions
             int param1 = obj1.sumRange(2, 5);
         }
 
-        //TODO
         public static void Test_RemoveDuplicates()
         {
             int[] nums = { 1,1,2 };
             Console.WriteLine(RemoveDuplicates.RemoveDuplicates_Perform(nums));
+
+            int[] nums1 = { 1, 2, 2 };
+            Console.WriteLine(RemoveDuplicates.RemoveDuplicates_Perform(nums1));
         }
 
         public static void Test_DisappearedNumbersInArray()

@@ -13,12 +13,19 @@ namespace questions
         //Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively.
         //It doesn't matter what you leave beyond the new length.
 
-        // TODO
         public static int RemoveDuplicates_Perform(int[] nums)
         {
             int index = 0;
 
-            // TODO Pending implementation
+            int i = 0, j= i+1;
+            for (; j < nums.Length; i++, j++)
+            {
+                if (nums[j] != nums[i])
+                {
+                    nums[index++] = nums[i];
+                }
+            }
+            nums[index] = nums[i];
 
             return index+1;
         }
