@@ -17,7 +17,11 @@ namespace questions
                     }
                 }
 
-                Utils.swap(ref nums[i], ref nums[smallestIndex]);
+                // swap unneeded if both are the same
+                if (i != smallestIndex)
+                {
+                    Utils.swap(ref nums[i], ref nums[smallestIndex]);
+                }
             }
         }
     }

@@ -10,6 +10,13 @@ namespace questions
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_QuickSort()
+        {
+            int[] nums = {3,4,1,7 };
+
+            Quick.Sort(nums);
+        }
+
         public static void Test_TotalHamming()
         {
             int[] nums = { 4, 14, 2};
@@ -330,7 +337,7 @@ namespace questions
         public static void Test_MaxSizeSubarray()
         {
             int[] nums = { -2, -1, 2, 1 };
-            MaximumSize.FindMaxSubarray(nums, 1);
+            MaximumSizeSubarray.MaxSubArrayLen(nums, 1);
         }
 
         public static void Test_MaximumSubarray()

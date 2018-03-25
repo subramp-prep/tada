@@ -11,4 +11,7 @@
     <Folder Include="Concepts\" />
     <Folder Include="Concepts\Sort\" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="325-MaximumSize.cs" />
+  </ItemGroup>
 </Project>

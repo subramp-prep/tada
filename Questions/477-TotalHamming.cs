@@ -23,19 +23,13 @@ namespace questions
         public static int TotalHammingDistance(int[] nums)
         {
             int distance = 0;
-            List<int[]> combinations = new List<int[]>();
-
             for (int i = 0; i < nums.Length; i++)
             {
                 for (int j = i + 1; j < nums.Length; j++)
                 {
-                    combinations.Add(new int [] {nums[i], nums[j]});
+                    //combinations.Add(new int [] {nums[i], nums[j]});
+                    distance += CalculateDistance(nums[i], nums[j]);
                 }
-            }
-
-            foreach (var combination in combinations)
-            {
-                distance += CalculateDistance(combination[0], combination[1]);
             }
 
             return distance;

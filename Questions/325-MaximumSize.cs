@@ -24,6 +24,7 @@ namespace questions
         // not complete, since this implementation 
         // provides the non-contiguous elements sum as well
         // more than the contiguous array
+        // Backtracking not the right solution!!!!
         public static void FindMaxSubarray(int[] nums, int sum)
         {
             IList<int> chosen = new List<int>();
