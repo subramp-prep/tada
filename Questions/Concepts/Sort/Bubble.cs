@@ -30,15 +30,15 @@ namespace questions
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
 
-            bool noswap = true;
-            for (int i = 0; i < nums.Length && noswap; i++)
+            bool elementSwap = true;
+            for (int i = 0; i < nums.Length && elementSwap; i++)
             {
-                noswap = false;
+                elementSwap = false;
                 for (int j = 1; j < nums.Length; j++)
                 {
                     if (nums[j] < nums[j - 1])
                     {
-                        noswap = true;
+                        elementSwap = true;
                         Utils.swap(ref nums[j], ref nums[j - 1]);
                     }
                 }

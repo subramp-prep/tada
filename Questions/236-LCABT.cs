@@ -12,7 +12,7 @@ namespace questions
 
         //        _______3______
         //       /              \
-        //    ___5__ ___1__
+        //    ___5__          ___1__
         //   /      \        /      \
         //   6      _2       0       8
         //         /  \
@@ -20,13 +20,13 @@ namespace questions
         //For example, the lowest common ancestor(LCA) of nodes 5 and 1 is 3. Another example is LCA 
         //of nodes 5 and 4 is 5, since a node can be a descendant of itself according to the LCA definition.
 
-        public TreeNode LowestCommonAncestor_EPI(TreeNode root, TreeNode p, TreeNode q)
+        public static TreeNode LowestCommonAncestor_EPI(TreeNode root, int p, int q)
         {
             if (root == null)
             {
                 return null;
             }
-            else if (root == p || root == q)
+            else if (root.val == p || root.val == q)
             {
                 return root;
             }

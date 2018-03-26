@@ -10,6 +10,99 @@ namespace questions
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_LCABT()
+        {
+            int?[] nums = {3, 5,1,6,2,0,8,null,null,7,4};
+
+            TreeNode root = TreeNode.BuildNullableTree(nums);
+            TreeNode commonAncestor = LCABT.LowestCommonAncestor_EPI(root, 6,8);
+        }
+
+        public static void Test_SumIII()
+        {
+            int[] nums = {-2, 0, 1, 3 };
+            Console.WriteLine(SumIII.ThreeSumSmaller(nums, 2));
+
+            int[] nums1 = { 3,1,0,-2 };
+            Console.WriteLine(SumIII.ThreeSumSmaller(nums1, 4));
+        }
+
+        public static void Test_Sum()
+        {
+            int[] nums = { -1, 0, 1, 2, -1, -4 };
+            var sum = Sum.ThreeSum_Optimum(nums);
+        }
+
+        public static void Test_BTLevelTraversalII()
+        {
+            int?[] nums = { 3, 9, 20, null, null, 15, 7 };
+            TreeNode root = TreeNode.BuildNullableTree(nums);
+
+            var output = BTTraversalII.LevelOrderBottom(root);
+        }
+
+        public static void Test_BTLevelTraversal()
+        {
+            int?[] nums = { 3, 9, 20, null, null, 15, 7 };
+            TreeNode root = TreeNode.BuildNullableTree(nums);
+
+            var output = BTLevelTraversal.LevelOrder(root);
+        }
+
+        public static void Test_AverageBTLevel()
+        {
+            int?[] nums = { 3, 9, 20, null, null, 15, 7 };
+            TreeNode root = TreeNode.BuildNullableTree(nums);
+
+            var output = AverageBTLevel.AverageOfLevels(root);
+        }
+
+        public static void Test_MeetingRoomsII()
+        {
+            IList<int[]> nums = new List<int[]>(){
+                new int []{4,9},
+                new int []{4,9},
+                new int []{9,15},
+                new int []{15,16},
+                new int []{10,14},
+                new int []{4,17}
+            };
+
+            var meetingTimes = Interval.CreateMany(nums);
+            Console.WriteLine(MeetingRoomsII.MinMeetingRooms(meetingTimes));
+
+            IList<int[]> nums1 = new List<int[]>(){
+                new int []{0,30},
+                new int []{45,50},
+                new int []{51,60}
+            };
+
+            var meetingTimes1 = Interval.CreateMany(nums1);
+            Console.WriteLine(MeetingRoomsII.MinMeetingRooms(meetingTimes1));
+        }
+
+
+        public static void Test_MeetingRooms()
+        {
+            IList<int[]> nums = new List<int[]>(){ 
+                new int []{0,30},
+                new int []{5,10},
+                new int []{15,20}
+            };
+
+            var meetingTimes = Interval.CreateMany(nums);
+            Console.WriteLine(MeetingRooms.CanAttendMeetings(meetingTimes));
+
+            IList<int[]> nums1 = new List<int[]>(){
+                new int []{0,30},
+                new int []{45,50},
+                new int []{51,60}
+            };
+
+            var meetingTimes1 = Interval.CreateMany(nums1);
+            Console.WriteLine(MeetingRooms.CanAttendMeetings(meetingTimes1));
+        }
+
         public static void Test_QuickSort()
         {
             int[] nums = {3,4,1,7 };

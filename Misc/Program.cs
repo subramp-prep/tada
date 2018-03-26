@@ -8,6 +8,19 @@ namespace Misc
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            Test_TowerOfHanoi();
+        }
+
+        public static void Test_TowerOfHanoi()
+        {
+            TowerOfHanoi.Perform(1, 'A', 'B', 'C');
+        }
+
+        public static void Test_SumIII()
+        {
+            int[] nums = { 5 ,3, 67, 75, 54, 8, 83};
+
+            Console.WriteLine(SumIII.Has3Sum(nums, 83));
         }
 
         public static void Test_ArrayDiagonalSum()

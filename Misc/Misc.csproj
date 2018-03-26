@@ -37,6 +37,8 @@
     <Compile Include="GridTraversal.cs" />
     <Compile Include="SecondLargesInArray.cs" />
     <Compile Include="ArrayDiagonalSum.cs" />
+    <Compile Include="SumIII.cs" />
+    <Compile Include="ToweOfHanoi.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="FB.md" />

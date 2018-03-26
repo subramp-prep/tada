@@ -45,23 +45,30 @@ namespace questions
             }
         }
 
-        public static int FindBadVersion(int max)
+        public static int FindBadVersion(int n)
         {
-            int lo = 1;
-            int hi = max;
-            int mid = 0;
+            //int lo = 1;
+            //int hi = max;
 
-            while (lo <= hi)
+            //while (lo <= hi)
+            //{
+            //    int mid = lo + (hi - lo)/ 2;
+
+            //    if (IsBadVersion(mid))
+            //        hi = mid - 1;
+            //    else
+            //        lo = mid + 1;
+            //}
+
+            //return lo;
+            int start = 1, end = n;
+            while (end >= start)
             {
-                mid = lo + (hi - lo) / 2;
-
-                if (IsBadVersion(mid))
-                    hi = mid - 1;
-                else
-                    lo = mid + 1;
+                int mid = start + (end - start) / 2;
+                if (IsBadVersion(mid)) end = mid - 1;
+                else start = mid + 1;
             }
-
-            return lo;
+            return start;
         }
 
         private static bool IsBadVersion(int n)
