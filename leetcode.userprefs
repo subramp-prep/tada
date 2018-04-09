@@ -1,18 +1,9 @@
 ﻿<Properties StartupConfiguration="{72282739-2DFD-40DD-883E-F0CBA343DF3E}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="leetcode Status">
     <Files>
+      <File FileName="Questions/004-Median.cs" Line="53" Column="1" />
       <File FileName="Questions/000Program.cs" Line="10" Column="47" />
-      <File FileName="Questions/236-LCABT.cs" Line="43" Column="1" />
-      <File FileName="Questions/252-MeetingRooms.cs" Line="24" Column="64" />
-      <File FileName="Questions/253-MeetingRoomsII.cs" Line="29" Column="1" />
-      <File FileName="Questions/259-3SumSmaller.cs" Line="16" Column="60" />
-      <File FileName="Questions/325-MaximumSizeSubarray.cs" Line="50" Column="47" />
-      <File FileName="Questions/349-ArrayIntersection.cs" Line="13" Column="5" />
-      <File FileName="Questions/048-RotateImage.cs" Line="6" Column="9" />
-      <File FileName="Questions/102-BTLevelTraversal.cs" Line="46" Column="14" />
-      <File FileName="Questions/107-BTTraversal.cs" Line="53" Column="64" />
-      <File FileName="Questions/637-AverageBTLevel.cs" Line="7" Column="83" />
-      <File FileName="Questions/Interval.cs" Line="23" Column="44" />
+      <File FileName="Questions/Concepts/Sort/Quick.cs" Line="1" Column="1" />
       <File FileName="leetcode Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>

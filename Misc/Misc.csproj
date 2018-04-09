@@ -39,6 +39,7 @@
     <Compile Include="ArrayDiagonalSum.cs" />
     <Compile Include="SumIII.cs" />
     <Compile Include="ToweOfHanoi.cs" />
+    <Compile Include="RmRedundantDir.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="FB.md" />

@@ -13,7 +13,7 @@ namespace Misc
 
         public static void Test_TowerOfHanoi()
         {
-            TowerOfHanoi.Perform(1, 'A', 'B', 'C');
+            TowerOfHanoi.Perform(6, 'A', 'B', 'C');
         }
 
         public static void Test_SumIII()

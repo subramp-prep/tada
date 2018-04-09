@@ -10,6 +10,13 @@ namespace questions
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_FindMedianSortedArrays()
+        {
+            int[] nums1 = { };
+            int[] nums2 = { 2};
+            Console.WriteLine(Median.FindMedianSortedArrays(nums1, nums2));
+        }
+
         public static void Test_LCABT()
         {
             int?[] nums = {3, 5,1,6,2,0,8,null,null,7,4};
