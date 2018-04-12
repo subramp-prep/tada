@@ -8,12 +8,27 @@ namespace Misc
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+        }
+
+        public static void Test_Playground()
+        {
             Test_TowerOfHanoi();
+
+            int[] nums2 = { 1, 1, 1, 2, 2, 3 };
+            Console.WriteLine("Remove duplicatesII length:{0}", Playground.RemoveDuplicatesII(nums2));
+
+            Console.WriteLine(Playground.HammingDistance(1, 4));
+
+            int[] nums1 = new int[10];
+            Console.WriteLine(Playground.Fibonacci_DP(6, nums1));
+
+            int[] nums = { 1, 2, 3 };
+            Playground.Permute(nums);
         }
 
         public static void Test_TowerOfHanoi()
         {
-            TowerOfHanoi.Perform(6, 'A', 'B', 'C');
+            TowerOfHanoi.Perform(3, 'A', 'B', 'C');
         }
 
         public static void Test_SumIII()

@@ -49,11 +49,14 @@ namespace questions
 
                 for (int index = 0; index < lu.Length; index++)
                 {
+                    // choose
                     char c = lu[index];
                     chosen.Append(c);
 
+                    // explore
                     PermuteHelper(input, scanIndex + 1, chosen, output);
 
+                    // unchoose
                     chosen.Remove(chosen.Length - 1, 1);
                 }
             }

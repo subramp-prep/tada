@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace questions
 {
@@ -8,6 +9,56 @@ namespace questions
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+        }
+
+        public static void Test_CombinationSumI()
+        {
+            int[] nums = { 2, 3, 6, 7 };
+            var output = CombinationSum.CombinationSumI(nums, 7);
+        }
+
+        public static void Test_BSTIterator()
+        {
+            int?[] nums = { 1, null, 2 };
+            var root = TreeNode.BuildNullableTree(nums);
+
+            BSTIterator i = new BSTIterator(root);
+
+            while (i.HasNext())
+            {
+                Console.WriteLine(i.Next());
+            }
+        }
+
+        public static void Test_CombinationSum()
+        {
+            Stopwatch stopwatch = new Stopwatch();
+
+            stopwatch.Start();
+            CombinationSum.CombinationSum3(45, 9);
+            stopwatch.Stop();
+
+            Console.WriteLine("Time taken: {0}s", stopwatch.ElapsedMilliseconds);
+
+            CombinationSum.CombinationSum3(7, 2);
+            CombinationSum.CombinationSum3(9, 3);
+        }
+
+        public static void Test_AddBinaryString()
+        {
+            Console.WriteLine(AddBinaryString.AddBinary("11", "1"));
+        }
+
+        public static void Test_MissingRanges()
+        {
+            int[] nums2 = { };
+            var output2 = MissingRanges.FindMissingRanges(nums2, -3, -1);
+
+            int[] nums1 = {  };
+            var output1 = MissingRanges.FindMissingRanges(nums1, 1, 1);
+            
+            int[] nums = { 0, 1, 3, 50, 75 };
+            var output = MissingRanges.FindMissingRanges(nums,0, 99);
         }
 
         public static void Test_FindMedianSortedArrays()
