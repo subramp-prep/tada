@@ -10,6 +10,12 @@ namespace Misc
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_RemoveArrayElementOccurence()
+        {
+            int[] nums = { 5,3,7,11,2,3,13,5,7};
+            Console.WriteLine(Playground.RemoveArrayElementOccurence(nums, 3));
+        }
+
         public static void Test_Playground()
         {
             Test_TowerOfHanoi();

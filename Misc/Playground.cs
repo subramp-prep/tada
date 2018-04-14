@@ -6,6 +6,29 @@ namespace Misc
 {
     public class Playground
     {
+        public static int RemoveArrayElementOccurence(int[] nums, int k)
+        {
+            if (nums.Length < 1)
+            {
+                return -1;
+            }
+
+            int occurence = 0;
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] == k)
+                {
+                    occurence++;
+                }
+                else
+                {
+                    nums[i - occurence] = nums[i];
+                }
+            }
+
+            return nums.Length - occurence;
+        }
+
         public static int RemoveDuplicatesII(int[] nums)
         {
             int count = 0;

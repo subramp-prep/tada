@@ -11,6 +11,34 @@ namespace questions
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_RotateList()
+        {
+            ListNode head = new ListNode(1)
+            {
+                next = new ListNode(2)
+                {
+                    next = new ListNode(3)
+                    {
+                        next = new ListNode(4)
+                        {
+                            next = new ListNode(5)
+                        }
+                    }
+                }
+            };
+
+            var rotatedHead = RotateList.RotateRight(head, 2);
+        }
+
+        public static void Test_RotateArray()
+        {
+            int[] nums = { 1, 2, 3, 4, 5, 6, 7 };
+            RotateArray.Rotate(nums, 3);
+
+            int[] nums1 = { -1 };
+            RotateArray.Rotate(nums1, 2);
+        }
+
         public static void Test_CombinationSumI()
         {
             int[] nums = { 2, 3, 6, 7 };
