@@ -11,6 +11,12 @@ namespace questions
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_RotateString()
+        {
+            Console.WriteLine(Rotate.String("abcde", "cdeab"));
+            Console.WriteLine(Rotate.String("abcde", "abced"));
+        }
+
         public static void Test_RotateList()
         {
             ListNode head = new ListNode(1)
