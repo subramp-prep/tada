@@ -1,10 +1,9 @@
 ﻿<Properties StartupConfiguration="{BB016EB2-CF58-4931-999E-B4AA9AC706D1}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Misc/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="leetcode Status">
     <Files>
-      <File FileName="Questions/000Program.cs" Line="31" Column="13" />
-      <File FileName="Misc/RmRedundantDir.cs" Line="52" Column="18" />
-      <File FileName="Misc/Program.cs" Line="10" Column="47" />
       <File FileName="leetcode Status" />
+      <File FileName="Misc/Program.cs" Line="10" Column="47" />
+      <File FileName="Questions/000Program.cs" Line="11" Column="47" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -26,7 +25,8 @@
       <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/Q163-MissingRanges.cs" relfile="Questions/Q163-MissingRanges.cs" line="33" column="1" />
       <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/067-AddBinary.cs" relfile="Questions/067-AddBinary.cs" line="16" column="1" />
       <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Misc/ToweOfHanoi.cs" relfile="Misc/ToweOfHanoi.cs" line="19" column="1" />
-      <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/000Program.cs" relfile="Questions/000Program.cs" line="21" column="1" />
+      <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/000Program.cs" relfile="Questions/000Program.cs" line="19" column="1" />
+      <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/050-Power.cs" relfile="Questions/050-Power.cs" line="46" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

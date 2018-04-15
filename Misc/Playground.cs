@@ -6,6 +6,21 @@ namespace Misc
 {
     public class Playground
     {
+        public static int Fib_DP(int n, int[] nums)
+        {
+            if (n < 2)
+            {
+                return n;
+            }
+
+            if (nums[n] == 0)
+            {
+                nums[n] = Fib_DP(n - 1, nums) + Fib_DP(n - 2, nums);
+            }
+
+            return nums[n];
+        }
+
         public static int RemoveArrayElementOccurence(int[] nums, int k)
         {
             if (nums.Length < 1)

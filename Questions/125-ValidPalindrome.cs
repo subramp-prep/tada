@@ -3,12 +3,16 @@ namespace questions
 {
     public class ValidPalindrome
     {
-        /// <summary>
-        /// https://leetcode.com/problems/valid-palindrome/description/
-        /// Perform was not accepted, since the time complexity was too high for 475th of 476 input
-        /// </summary>
-        /// <returns>The peform.</returns>
-        /// <param name="content">Content.</param>
+        // https://leetcode.com/problems/valid-palindrome/description/
+        //Given a string, determine if it is a palindrome, 
+        //considering only alphanumeric characters and ignoring cases.
+        //For example,
+        //"A man, a plan, a canal: Panama" is a palindrome.
+        //"race a car" is not a palindrome.
+
+        //Note:
+        //Have you consider that the string might be empty? This is a good question to ask during an interview.
+        //For the purpose of this problem, we define empty string as valid palindrome.
 
         public static bool Peform(string content)
         {

@@ -10,6 +10,11 @@ namespace Misc
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_FibDP()
+        {
+            Console.WriteLine(Playground.Fib_DP(30, new int[31]));
+        }
+
         public static void Test_RemoveRedundantDir()
         {
             string[] dirs = { @"\abc\def\ghi", @"\abc\def", @"\abc\uvw", @"\xyz" };

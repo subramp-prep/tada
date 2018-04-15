@@ -4,12 +4,18 @@ using System.Linq;
 
 namespace questions
 {
+    // Question URL: https://leetcode.com/problems/generate-parentheses/description/
+    //Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+    //For example, given n = 3, a solution set is:
+    //[
+    //  "((()))",
+    //  "(()())",
+    //  "(())()",
+    //  "()(())",
+    //  "()()()"
+    //]
     public class GenerateCombination
     {
-        /// <summary>
-        /// Question URL: https://leetcode.com/problems/generate-parentheses/description/
-        /// </summary>
-
         private static string _paranthesis = "()";
 
         public static IList<string> GenerateParenthesis(int n)

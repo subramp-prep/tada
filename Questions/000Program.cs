@@ -9,8 +9,6 @@ namespace questions
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-
-            Test_BuildBST();
         }
 
         public static void Test_BuildBST()
