@@ -21,41 +21,34 @@ namespace Misc
 
     public class RmRedundantDir
     {
-        HashSet<string> RemoveRedundantFileDirs(string[] dirs)
+        public static HashSet<string> RemoveRedundantFileDirs(string[] dirs)
         {
             HashSet<string> output = new HashSet<string>();
 
             if (dirs.Length <= 0)
                 return output;
-
-            if (dirs[0][0] == '\\')
-                output.Add(dirs[0]);
-
+            
             foreach (var dir in dirs)
             {
                 if (dir[0] != '\\')
                     continue;
 
+                output.RemoveWhere(x => x.StartsWith(dir, StringComparison.CurrentCulture));
+
+                bool shouldAdd = true;
                 foreach (var element in output)
                 {
-                    if (element.Length > dir.Length)
+                    if (element.Length < dir.Length &&
+                        dir.StartsWith(element, StringComparison.CurrentCulture))
                     {
-                        if (element.StartsWith(dir, StringComparison.CurrentCultureIgnoreCase))
-                        {
-                            // potential match
-                            output.Remove(element);
-                        }
+                        shouldAdd = false;
+                        break;
+                    }
+                }
 
-                        if (!output.Contains(dir))
-                            output.Add(dir);
-                        //break;
-                    }
-                    else
-                    {
-                        if (!dir.StartsWith(element, StringComparison.CurrentCultureIgnoreCase) && 
-                            !output.Contains(dir))
-                            output.Add(dir);
-                    }
+                if (shouldAdd)
+                {
+                    output.Add(dir);
                 }
             }
 

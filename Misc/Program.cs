@@ -10,6 +10,21 @@ namespace Misc
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_RemoveRedundantDir()
+        {
+            string[] dirs = { @"\abc\def\ghi", @"\abc\def", @"\abc\uvw", @"\xyz" };
+            RmRedundantDir.RemoveRedundantFileDirs(dirs);
+
+            string[] dirs1 = { @"\abc\ghi", @"\abc\def", @"\abc\uvw", @"\abc", @"bc\xyz\ghi" };
+            RmRedundantDir.RemoveRedundantFileDirs(dirs1);
+
+            string[] dirs2 = { @"\abc", @"\abc\ghi", @"\abc\ghi\uvw"};
+            RmRedundantDir.RemoveRedundantFileDirs(dirs2);
+
+            string[] dirs3 = { @"\", @"\abc", @"\abc\ghi", @"\abc\ghi\uvw" };
+            RmRedundantDir.RemoveRedundantFileDirs(dirs3);
+        }
+
         public static void Test_RemoveArrayElementOccurence()
         {
             int[] nums = { 5,3,7,11,2,3,13,5,7};

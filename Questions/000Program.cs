@@ -9,6 +9,28 @@ namespace questions
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            Test_BuildBST();
+        }
+
+        public static void Test_BuildBST()
+        {
+            int[] nums = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+            var root = TreeNode.BuildBST(nums);
+        }
+
+        public static void Test_TreeHeight()
+        {
+            int[] nums = {1,2,3,4,5,6,7,8,9,10 };
+
+            var root = TreeNode.BuildTree(nums);
+            Console.WriteLine(TreeNode.GetTreeHeight(root));
+
+            int[] nums1 = { 1};
+
+            var root1 = TreeNode.BuildTree(nums1);
+            Console.WriteLine(TreeNode.GetTreeHeight(root1));
         }
 
         public static void Test_RotateString()
