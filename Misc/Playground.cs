@@ -6,6 +6,116 @@ namespace Misc
 {
     public class Playground
     {
+        public static int KthSmallest(int[,] matrix, int k)
+        {
+            int n = (int)Math.Sqrt(matrix.Length);
+
+            int count = 0;
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    Console.WriteLine(matrix[j, i]);
+                    if (++count == k)
+                    {
+                        return matrix[j, i];
+                    }
+                }
+            }
+
+            return 0;
+        }
+
+        public static IList<IList<int>> Subsets(int[] nums)
+        {
+            IList<IList<int>> output = new List<IList<int>>();
+
+            SubsetHelper(new List<int>(nums), new List<int>(), output);
+
+            return output;
+        }
+
+        private static void SubsetHelper(List<int> input, List<int> chosen, IList<IList<int>> output)
+        {
+            if (input.Count == 0)
+            {
+                output.Add(new List<int>(chosen));
+            }
+            else
+            {
+                int c = input[0];
+                input.RemoveAt(0);
+
+                SubsetHelper(input, chosen, output);
+
+                chosen.Add(c);
+
+                SubsetHelper(input, chosen, output);
+
+                chosen.RemoveAt(chosen.Count -1);
+                input.Add(c);
+            }
+        }
+
+        public static string CountAndSay(int n)
+        {
+            string s = "1";
+            for (int i = 0; i < n; i++)
+            {
+                s = NextNumber(s);
+            }
+
+            return s;
+        }
+
+        private static string NextNumber(string s)
+        {
+            string output = string.Empty;
+            for (int i = 0; i < s.Length; i++)
+            {
+                int count = 1;
+
+                while (i+1 < s.Length && s[i] == s[i+1])
+                {
+                    i++; count++;
+                }
+
+                output += count.ToString() + s[i];
+            }
+            return output;
+        }
+
+        public static void Rotate_Array(int[,] nums)
+        {
+            int rowElementCount = (int)Math.Sqrt(nums.Length);
+            int mid =  rowElementCount/ 2;
+            int n = rowElementCount;
+            for (int i = 0; i < mid; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    swap(ref nums[i,j], ref nums[n-1-i,j]);
+                }
+            }
+
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = i; j < n; j++)
+                {
+                    swap(ref nums[i,j], ref nums[j,i]);
+                }
+            }
+        }
+
+        public static void swap(ref int a, ref int b)
+        {
+            int temp = 0;
+
+            temp = a;
+            a = b;
+            b = temp;
+        }
+
         public static int Fib_DP(int n, int[] nums)
         {
             if (n < 2)

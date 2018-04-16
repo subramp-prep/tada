@@ -8,6 +8,45 @@ namespace Misc
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            Test_KthSmallestFromMatrix();
+        }
+
+        public static void Test_KthSmallestFromMatrix()
+        {
+            int[,] nums = { 
+                {1,  5,  9},
+                {10, 11, 13},
+                {12, 13, 15}
+            };
+
+            Console.WriteLine(Playground.KthSmallest(nums, 8));
+        }
+
+        public static void Test_Subset()
+        {
+            int[] nums = { 1, 2, 3 };
+            Playground.Subsets(nums);
+        }
+
+        public static void Test_CountnSay()
+        {
+            Playground.CountAndSay(4);
+        }
+
+        public static void Test_ArrayRotation()
+        {
+            int[,] nums = { 
+                {1,2},
+                {3,4}
+            };
+            Playground.Rotate_Array(nums);
+
+            int[,] nums1 = {
+                {1,2, 3},
+                {4, 5,6},
+                {7,8,9}
+            };
+            Playground.Rotate_Array(nums1);
         }
 
         public static void Test_FibDP()
