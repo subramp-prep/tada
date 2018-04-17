@@ -11,6 +11,19 @@ namespace questions
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_TwosumBST()
+        {
+            int?[] nums = { 5,3,6,2,4,null,7};
+            var root = TreeNode.BuildNullableTree(nums);
+
+            Console.WriteLine(TwoSum.FindTarget(root, 9));
+            Console.WriteLine(TwoSum.FindTarget(root, 28));
+
+            int[] nums1 = { 1 };
+            var root1 = TreeNode.BuildTree(nums1);
+            Console.WriteLine(TwoSum.FindTarget(root1, 2));
+        }
+
         public static void Test_LargestAtLeastTwice()
         {
             int[] nums = {71,62,60,32,67,37,62,44,0,9,52,22,65,69,13,50,93,17,27,
