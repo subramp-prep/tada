@@ -9,7 +9,36 @@ namespace questions
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Test_CountAndSay();
+        }
+
+        public static void Test_LargestAtLeastTwice()
+        {
+            int[] nums = {71,62,60,32,67,37,62,44,0,9,52,22,65,69,13,50,93,17,27,
+                77,99,15,65,19,83,80,55,39,36,81,52,44,42,95,66,26,11,53,97,18,
+                46,76,18,32,71,16,86,1,66,28 };
+            
+            Console.WriteLine(LargestIndexTwice.Perform_Optimum(nums));
+        }
+
+        public static void Test_MergeInterval()
+        {
+            IList<int[]> input1 = new List<int[]>();
+            input1.Add(new int[] { 1, 4 });
+            input1.Add(new int[] { 5, 6 });
+
+            var intervals1 = Interval.CreateMany(input1);
+
+            MergeIntervals.Merge(intervals1);
+
+            IList<int[]> input = new List<int[]>();
+            input.Add(new int[] { 1, 3 });
+            input.Add(new int[] { 2, 6 });
+            input.Add(new int[] { 8, 10 });
+            input.Add(new int[] { 15, 18 });
+
+            var intervals = Interval.CreateMany(input);
+
+            MergeIntervals.Merge(intervals);
         }
 
         public static void Test_BuildBST()

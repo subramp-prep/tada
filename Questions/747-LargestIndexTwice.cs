@@ -57,5 +57,45 @@ namespace questions
 
             return largeIndex;
         }
+
+        public static int Perform_Optimum(int[] nums)
+        {
+            if (nums.Length < 1 || nums.Length > 50)
+                return -1;
+
+            if (nums.Length <= 1)
+                return 0;
+
+            int ?maxIndex = null;
+            int ?secondMax = null;
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (maxIndex == null)
+                {
+                    maxIndex = i;
+                }
+                else if(nums[i] > nums[maxIndex.Value])
+                {
+                    secondMax = maxIndex;
+                    maxIndex = i;
+                }
+                else if(secondMax == null)
+                {
+                    secondMax = i;
+                }
+                else if(nums[i] > nums[secondMax.Value])
+                {
+                    secondMax = i;
+                }
+            }
+
+            if (nums[secondMax.Value]*2 <= nums[maxIndex.Value])
+            {
+                return maxIndex.Value;
+            }
+
+            return -1;
+        }
     }
 }
