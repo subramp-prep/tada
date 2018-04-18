@@ -9,6 +9,7 @@ namespace questions
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            Test_Sum();
         }
 
         public static void Test_TwosumBST()

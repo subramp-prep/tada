@@ -192,5 +192,21 @@ namespace questions
 
             return true;
         }
+
+        public static TreeNode LCAForBST(TreeNode root, TreeNode p, TreeNode q)
+        {
+            if (root.val > Math.Max(p.val, q.val))
+            {
+                return LCAForBST(root.left, p, q);
+            }
+            else if (root.val < Math.Min(p.val, q.val))
+            {
+                return LCAForBST(root.right, p, q);
+            }
+            else
+            {
+                return root;
+            }
+        }
     }
 }
