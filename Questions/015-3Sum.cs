@@ -101,6 +101,15 @@ namespace questions
                         combo.Add(c);
 
                         combinations.Add(combo);
+
+                        if (b == nums[start + 1])
+                        {
+                            start = start + 1;
+                        }
+                        else
+                        {
+                            end = end - 1;
+                        }
                     }
                     else if (a+b+c > 0)
                     {
