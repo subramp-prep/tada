@@ -8,7 +8,7 @@ namespace Misc
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Test_KthSmallestFromMatrix();
+            Test_Vector2D();
         }
 
         public static void Test_KthSmallestFromMatrix()
@@ -156,18 +156,24 @@ namespace Misc
             vec2d.Add(new List<int>(new int[] { 1, 2 }));
             vec2d.Add(new List<int>(new int[] { 3 }));
             vec2d.Add(new List<int>(new int[] { 4,5,6 }));
-
-            int[][] arrary2d = new int [][] 
-            { 
-                new int[] {1,2},
-                new int[] {3},
-                new int[] {4,5,6}
-            };
                 
-            Vector2D i = new Vector2D(vec2d);
-            while (i.HasNext()) 
+            //Vector2D i = new Vector2D(vec2d);
+            //while (i.HasNext()) 
+            //{
+            //    Console.WriteLine(i.Next());   
+            //}
+
+            //[[],[],[-1]]
+            IList<IList<int>> vec2d1 = new List<IList<int>>();
+
+            vec2d1.Add(new List<int>(new int[] { }));
+            vec2d1.Add(new List<int>(new int[] {  }));
+            vec2d1.Add(new List<int>(new int[] { -1}));
+
+            Vector2D j = new Vector2D(vec2d1);
+            while (j.HasNext())
             {
-                Console.WriteLine(i.Next());   
+                Console.WriteLine(j.Next());
             }
         }
     }

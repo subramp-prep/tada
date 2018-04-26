@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace questions
 {
     // Question URL: https://leetcode.com/problems/walls-and-gates/description/
@@ -25,10 +27,54 @@ namespace questions
     // Hint: BFS
     public class WallNGates
     {
-        // TODO   
-        public void WallsAndGates(int[,] rooms)
+        public static void WallsAndGates(int[,] rooms)
         {
+            int row = rooms.GetLength(0);
+            int column = rooms.GetLength(1);
+            
+            Queue<Tuple<int, int>> reachable = new Queue<Tuple<int, int>>();
+            for (int x = 0; x < row; x++)
+            {
+                for (int y = 0; y < column; y++)
+                {
+                    if (rooms[x,y] == 0)
+                    {
+                        reachable.Enqueue(new Tuple<int, int>(x, y));
+                    }
+                }
+            }
 
+            List<Tuple<int, int>> dirs = new List<Tuple<int, int>>();
+            dirs.Add(new Tuple<int, int>(1, 0));
+            dirs.Add(new Tuple<int, int>(0, 1));
+            dirs.Add(new Tuple<int, int>(-1, 0));
+            dirs.Add(new Tuple<int, int>(0, -1));
+
+            while (reachable.Count > 0)
+            {
+                var current = reachable.Dequeue();
+
+                var currentX = current.Item1;
+                var currentY = current.Item2;
+
+                foreach (var dir in dirs)
+                {
+                    int x = currentX + dir.Item1;
+                    int y = currentY + dir.Item2;
+                    if (x < 0 || y < 0 || 
+                        x >= row || y >= column ||
+                        rooms[x,y] <= rooms[currentX, currentY] + 1)
+                    {
+                        continue;
+                    }
+
+                    rooms[x, y] = rooms[currentX, currentY] + 1;
+
+                    reachable.Enqueue(new Tuple<int, int>(x, y));
+                }
+            }
+
+            Console.WriteLine("Built new matrix");
         }
     }
 }

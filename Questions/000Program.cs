@@ -9,7 +9,45 @@ namespace questions
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Test_Sum();
+        }
+
+        public static void Test_NumberOfIslands()
+        {
+            char[,] grid1 = { 
+                {'1', '1', '0', '0', '0'},
+                {'1', '1', '0', '0', '0'},
+                {'0', '0', '1', '0', '0'},
+                {'0', '0', '0', '1', '1'}
+            };
+            Console.WriteLine(NumberOfIslands.NumIslands(grid1));
+            
+            char[,] grid = { 
+                {'1', '1', '1', '1', '0'},
+                {'1', '1', '0', '1', '0'},
+                {'1', '1', '0', '0', '0'},
+                {'0', '0', '0', '0', '0'}
+            };
+
+            Console.WriteLine(NumberOfIslands.NumIslands(grid));
+        }
+
+        public static void Test_WallNGate()
+        {
+            int[,] matrix = new int[,]
+            {
+                {int.MaxValue, -1, 0, int.MaxValue},
+                {int.MaxValue, int.MaxValue, int.MaxValue, -1},
+                {int.MaxValue, -1, int.MaxValue, -1},
+                {0, -1, int.MaxValue, int.MaxValue}
+            };
+
+            WallNGates.WallsAndGates(matrix);
+        }
+
+        public static void Test_BTFactors()
+        {
+            int[] nums = {2, 4, 5, 10 };
+            BTFactors.NumFactoredBinaryTrees(nums);
         }
 
         public static void Test_TwosumBST()

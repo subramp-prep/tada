@@ -18,6 +18,8 @@ namespace questions
         //More practice:
         //If you have figured out the O(n) solution, 
         //try coding another solution of which the time complexity is O(n log n).
+
+        // TODO time exceeded on submission
         public static int MinSubArrayLen(int s, int[] nums)
         {
             int ?minSize = null;
