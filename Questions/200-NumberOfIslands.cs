@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace questions
 {
     // Question URL: https://leetcode.com/problems/number-of-islands/description/
@@ -56,6 +58,63 @@ namespace questions
             DFSFloodFill(grid, row, column, tRow, tColumn + 1);
             DFSFloodFill(grid, row, column, tRow - 1, tColumn);
             DFSFloodFill(grid, row, column, tRow, tColumn - 1);
+        }
+
+        public static int NumIslands_BFS(char[,] grid)
+        {
+            int count = 0;
+            
+            int rows = grid.GetLength(0);
+            int columns = grid.GetLength(1);
+
+            for (int r = 0; r < rows; r++)
+            {
+                for (int c = 0; c < columns; c++)
+                {
+                    if (grid[r, c] == '1')
+                    {
+                        BFSFloodFill(grid, rows, columns, r, c);
+                        count++;
+                    }
+                }
+            }
+
+            return count;
+        }
+
+        private static void BFSFloodFill(char[,] grid, int row, int column, int tRow, int tColumn)
+        {
+            Queue<Tuple<int, int>> visited = new Queue<Tuple<int, int>>();
+            visited.Enqueue(new Tuple<int, int>(tRow, tColumn));
+
+            while (visited.Count > 0)
+            {
+                var recent = visited.Dequeue();
+
+                if (recent.Item1 + 1 < row && grid[recent.Item1+1, recent.Item2] == '1') 
+                {
+                    grid[recent.Item1 + 1, recent.Item2] = '0';
+                    visited.Enqueue(new Tuple<int, int>(recent.Item1 + 1, recent.Item2));
+                }
+
+                if (recent.Item2 + 1 < column && grid[recent.Item1, recent.Item2 + 1] == '1')
+                {
+                    grid[recent.Item1, recent.Item2 + 1] = '0';
+                    visited.Enqueue(new Tuple<int, int>(recent.Item1, recent.Item2 + 1));
+                }
+
+                if (recent.Item1 - 1 >= 0  && grid[recent.Item1 -1 , recent.Item2] == '1')
+                {
+                    grid[recent.Item1 - 1, recent.Item2] = '0';
+                    visited.Enqueue(new Tuple<int, int>(recent.Item1 - 1, recent.Item2));
+                }
+
+                if (recent.Item2 - 1 >= 0 && grid[recent.Item1, recent.Item2 - 1] == '1')
+                {
+                    grid[recent.Item1, recent.Item2-1] = '0';
+                    visited.Enqueue(new Tuple<int, int>(recent.Item1, recent.Item2 -1));
+                }
+            }
         }
     }
 }
