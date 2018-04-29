@@ -6,6 +6,94 @@ namespace Misc
 {
     public class Playground
     {
+        public static void RotateArray(int[] nums, int k)
+        {
+            k %= nums.Length;
+
+            Reverse(nums, 0, nums.Length-1);
+            Reverse(nums, 0, k - 1);
+            Reverse(nums, k, nums.Length - 1);
+        }
+
+        private static void Reverse(int[] nums, int low, int high)
+        {
+            while (low < high)
+            {
+                swap(ref nums[low++], ref nums[high--]);
+            }
+        }
+
+        public static void ReverseSentence(char[] s)
+        {
+            Reverse(s, 0, s.Length - 1);
+
+            int ?startIndex = null;
+            for (int i = 0; i < s.Length; i++)
+            {
+                if(s[i] != ' ' && startIndex == null)
+                {
+                    startIndex = i;
+                }
+                else if (s[i] == ' ' && startIndex.HasValue)
+                {
+                    Reverse(s, startIndex.Value, i - 1);
+                    startIndex = null;
+                }
+                else if (i == s.Length -1 && s[i] != ' ')
+                {
+                    Reverse(s, startIndex.Value, i);
+                }
+            }
+        }
+
+        private static void Reverse(char[] s, int low, int high)
+        {
+            while (low < high)
+            {
+                swap(ref s[low++], ref s[high--]);
+            }
+        }
+
+        private static void swap(ref char a, ref char b)
+        {
+            char temp = a;
+            a = b;
+            b = temp;
+        }
+
+        public static void RotateMatrix(int[,] nums)
+        {
+            int row = nums.GetLength(0);
+            int column = nums.GetLength(1);
+
+            for (int i = 0; i < row/2; i++)
+            {
+                for (int j = 0; j < column; j++)
+                {
+                    swap(ref nums[i, j], ref nums[row - 1 - i, j]);
+                }
+            }
+
+            for (int i = 0; i < row; i++)
+            {
+                for (int j = i; j < column; j++) // <-- Important assignment j=i
+                {
+                    swap(ref nums[i,j], ref nums[j,i]);
+                }
+            }
+        }
+
+        public static int FirstFactorial(int num)
+        {
+            int result = 1;
+            for (int i = num; i > 1; i--)
+            {
+                result *= i;
+            }
+
+            return result;
+        }
+
         public static int KthSmallest(int[,] matrix, int k)
         {
             int n = (int)Math.Sqrt(matrix.Length);

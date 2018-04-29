@@ -41,6 +41,7 @@
     <Compile Include="ToweOfHanoi.cs" />
     <Compile Include="RmRedundantDir.cs" />
     <Compile Include="Playground.cs" />
+    <Compile Include="Codec.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="FB.md" />

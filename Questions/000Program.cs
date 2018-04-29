@@ -11,6 +11,84 @@ namespace questions
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_LargestIsland()
+        {
+            int[][] grid1 = {
+                new int[] {1, 0},
+                new int[] {0, 1}
+            };
+
+            MakingIsland.LargestIsland(grid1);
+
+            int[][] grid2 = {
+                new int[] {1, 1, 1, 0},
+                new int[] {1, 1, 0, 0},
+                new int[] {0, 0, 1, 0},
+                new int[] {0, 0, 0, 0},
+                new int[] {0, 1, 1, 1}
+            };
+
+            MakingIsland.LargestIsland(grid2);
+        }
+
+        public static void Test_LLCycleII()
+        {
+            ListNode l1 = new ListNode(1);
+            ListNode l2 = new ListNode(2);
+            ListNode l3 = new ListNode(3);
+            ListNode l4 = new ListNode(4);
+            ListNode l5 = new ListNode(5);
+
+            l1.next = l2;
+            l2.next = l3;
+            l3.next = l4;
+            l4.next = l5;
+            l5.next = l2;
+
+            var val = LLCycleII.DetectCycle(l1);
+        }
+
+        public static void Test_LLCycle()
+        {
+            ListNode ll1 = new ListNode(1);
+            ListNode ll2 = new ListNode(2);
+
+            ll1.next = ll2;
+
+            Console.WriteLine(LLCycle.HasCycle(ll1));
+
+            ListNode l1 = new ListNode(1);
+            ListNode l2 = new ListNode(2);
+            ListNode l3 = new ListNode(3);
+            ListNode l4 = new ListNode(4);
+            ListNode l5 = new ListNode(5);
+
+            l1.next = l2;
+            l2.next = l3;
+            l3.next = l4;
+            l4.next = l5;
+            l5.next = l2;
+
+            Console.WriteLine(LLCycle.HasCycle(l1));
+        }
+
+        public static void Test_GoatLatin()
+        {
+            Console.WriteLine(GoatLatin.ToGoatLatin("I speak Goat Latin"));
+        }
+
+        public static void Test_MaxAreaIsland()
+        {
+            int[,] grid = { 
+                {1,1,0,0,0},
+                {1,1,0,0,0},
+                {0,0,0,1,1},
+                {0,0,0,1,1},
+            };
+
+            Console.WriteLine(MaxAreaIsland.MaxAreaOfIsland(grid));
+        }
+
         public static void Test_NumberOfIslands()
         {
             char[,] grid3 = {

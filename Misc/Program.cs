@@ -8,7 +8,35 @@ namespace Misc
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Test_Vector2D();
+        }
+
+        public static void Test_RotateArray()
+        {
+            int[] nums = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            Playground.RotateArray(nums, 3);
+        }
+
+        public static void Test_ReverseWord()
+        {
+            char[] s = "the sky is blue".ToCharArray();
+            Playground.ReverseSentence(s);
+
+            char[] s1 = "Vande matram   ".ToCharArray();
+            Playground.ReverseSentence(s1);
+        }
+
+        public static void Test_Codec()
+        {
+            string url = "https://leetcode.com/problems/design-tinyurl";
+
+            Codec codec = new Codec();
+            Console.WriteLine(codec.decode(codec.encode(url)));
+        }
+
+        public static void Test_Factorial()
+        {
+            Console.WriteLine(Playground.FirstFactorial(4));
+            Console.WriteLine(Playground.FirstFactorial(8));
         }
 
         public static void Test_KthSmallestFromMatrix()
@@ -33,20 +61,20 @@ namespace Misc
             Playground.CountAndSay(4);
         }
 
-        public static void Test_ArrayRotation()
+        public static void Test_MatrixRotation()
         {
             int[,] nums = { 
                 {1,2},
                 {3,4}
             };
-            Playground.Rotate_Array(nums);
+            Playground.RotateMatrix(nums);
 
             int[,] nums1 = {
                 {1,2, 3},
                 {4, 5,6},
                 {7,8,9}
             };
-            Playground.Rotate_Array(nums1);
+            Playground.RotateMatrix(nums1);
         }
 
         public static void Test_FibDP()

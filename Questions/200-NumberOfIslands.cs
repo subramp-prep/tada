@@ -82,6 +82,9 @@ namespace questions
             return count;
         }
 
+        // According to wiki 2 Important things in BFS
+        // 1. Go all directions West, East, North, South
+        // 2. Every time we go a direction, we must set the target value '0'
         private static void BFSFloodFill(char[,] grid, int row, int column, int tRow, int tColumn)
         {
             Queue<Tuple<int, int>> visited = new Queue<Tuple<int, int>>();
