@@ -1,12 +1,9 @@
 ﻿<Properties StartupConfiguration="{72282739-2DFD-40DD-883E-F0CBA343DF3E}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Questions/824-GoatLatin.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="leetcode Status">
     <Files>
-      <File FileName="Questions/000Program.cs" Line="11" Column="47" />
-      <File FileName="Questions/015-3Sum.cs" Line="54" Column="30" />
-      <File FileName="Questions/142-LLCycle.cs" Line="35" Column="21" />
+      <File FileName="Questions/652-DuplicateSubtrees.cs" Line="55" Column="53" />
+      <File FileName="Questions/000Program.cs" Line="35" Column="40" />
       <File FileName="leetcode Status" />
-      <File FileName="Misc/Program.cs" Line="10" Column="47" />
-      <File FileName="Questions/824-GoatLatin.cs" Line="54" Column="25" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -32,7 +29,6 @@
       <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/286-WallNGates.cs" relfile="Questions/286-WallNGates.cs" line="31" column="1" />
       <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Misc/Flatten2DVector.cs" relfile="Misc/Flatten2DVector.cs" line="34" column="1" />
       <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/695-MaxAreaIsland.cs" relfile="Questions/695-MaxAreaIsland.cs" line="48" column="1" />
-      <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Misc/Playground.cs" relfile="Misc/Playground.cs" line="10" column="10" />
       <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/827-MakingIsland.cs" relfile="Questions/827-MakingIsland.cs" line="37" column="24" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

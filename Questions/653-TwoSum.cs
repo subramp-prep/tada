@@ -29,7 +29,7 @@ namespace questions
     //Target = 28
     //Output: False
 
-    public class TwoSum
+    public class TwoSumBST
     {
         public static bool FindTarget(TreeNode root, int k)
         {

@@ -11,6 +11,14 @@ namespace questions
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_FindDupSubtrees()
+        {
+            int?[] nums = {1,2,3,4,null, 2,4,null, null, null, null, 4};
+            var root = TreeNode.BuildNullableTree(nums);
+
+            var dups = DuplicateSubtrees.FindDuplicateSubtrees(root);
+        }
+
         public static void Test_LargestIsland()
         {
             int[][] grid1 = {
@@ -164,12 +172,12 @@ namespace questions
             int?[] nums = { 5,3,6,2,4,null,7};
             var root = TreeNode.BuildNullableTree(nums);
 
-            Console.WriteLine(TwoSum.FindTarget(root, 9));
-            Console.WriteLine(TwoSum.FindTarget(root, 28));
+            Console.WriteLine(TwoSumBST.FindTarget(root, 9));
+            Console.WriteLine(TwoSumBST.FindTarget(root, 28));
 
             int[] nums1 = { 1 };
             var root1 = TreeNode.BuildTree(nums1);
-            Console.WriteLine(TwoSum.FindTarget(root1, 2));
+            Console.WriteLine(TwoSumBST.FindTarget(root1, 2));
         }
 
         public static void Test_LargestAtLeastTwice()

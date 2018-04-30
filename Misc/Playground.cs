@@ -6,6 +6,33 @@ namespace Misc
 {
     public class Playground
     {
+        public static int[] TwoSum(int[] nums, int target)
+        {
+            IDictionary<int, int> elements = new Dictionary<int, int>();
+            int[] output = null;
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                int diff = target - nums[i];
+
+                if (elements.ContainsKey(diff))
+                {
+                    output = new int[2];
+                    output[0] = elements[diff];
+                    output[1] = i;
+
+                    break;
+                }
+                else
+                {
+                    if(!elements.ContainsKey(nums[i]))
+                        elements.Add(nums[i], i);
+                }
+            }
+
+            return output;
+        }
+
         public static void RotateArray(int[] nums, int k)
         {
             k %= nums.Length;

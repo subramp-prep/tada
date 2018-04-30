@@ -8,6 +8,13 @@ namespace Misc
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            Test_TwoSum();
+        }
+
+        public static void Test_TwoSum()
+        {
+            int[] nums = { 2, 7, 11, 15 };
+            Playground.TwoSum(nums, 9);
         }
 
         public static void Test_RotateArray()
