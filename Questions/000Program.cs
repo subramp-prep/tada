@@ -11,6 +11,14 @@ namespace questions
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_TreeToString()
+        {
+            int[] nums = { 1, 2, 3, 4 };
+            var root = TreeNode.BuildTree(nums);
+
+            Console.WriteLine(TreeToString.Tree2str(root));
+        }
+
         public static void Test_FindDupSubtrees()
         {
             int?[] nums = {1,2,3,4,null, 2,4,null, null, null, null, 4};

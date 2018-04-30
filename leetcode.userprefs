@@ -2,7 +2,10 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="leetcode Status">
     <Files>
       <File FileName="Questions/652-DuplicateSubtrees.cs" Line="55" Column="53" />
-      <File FileName="Questions/000Program.cs" Line="35" Column="40" />
+      <File FileName="Questions/000Program.cs" Line="11" Column="47" />
+      <File FileName="Questions/606-TreeToString.cs" Line="59" Column="55" />
+      <File FileName="Questions/602-FriendsRequest.sql" Line="1" Column="1" />
+      <File FileName="Questions/597-FriendRequest.sql" Line="11" Column="34" />
       <File FileName="leetcode Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
@@ -30,6 +33,7 @@
       <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Misc/Flatten2DVector.cs" relfile="Misc/Flatten2DVector.cs" line="34" column="1" />
       <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/695-MaxAreaIsland.cs" relfile="Questions/695-MaxAreaIsland.cs" line="48" column="1" />
       <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/827-MakingIsland.cs" relfile="Questions/827-MakingIsland.cs" line="37" column="24" />
+      <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/000Program.cs" relfile="Questions/000Program.cs" line="20" column="10" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
