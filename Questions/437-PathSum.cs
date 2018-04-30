@@ -69,6 +69,23 @@ namespace questions
             nodes.RemoveAt(nodes.Count - 1);
         }
 
+        // WRONG IMPL
+        private static int PathSum(TreeNode root, int target, int count)
+        {
+            if (root == null)
+                return 0;
+
+            int sum = root.val + PathSum(root.left, target, count) + PathSum(root.right, target, count);
+
+            Console.WriteLine(sum);
+            if (sum == target)
+            {
+                count++;
+            }
+
+            return sum;
+        }
+
 
         //Dead code... trial 1 DFS
         private static void PathSumHelper(TreeNode root, int sum, IList<int> nodes, int count)

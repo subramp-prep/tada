@@ -9,6 +9,7 @@ namespace questions
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            Test_MaximumSizeSubarray();
         }
 
         public static void Test_TreeToString()
@@ -452,8 +453,8 @@ namespace questions
 
         public static void Test_PathSumIII()
         {
-            //{ 10, 5, -3, 3, 2, null, 11, 3, -2, null, 1 };
-            int?[] nums = { 0, 1, 1 };
+            int?[] nums = { 10, 5, -3, 3, 2, null, 11, 3, -2, null, 1 };
+            //int?[] nums = { 0, 1, 1 };
             TreeNode root = TreeNode.BuildNullableTree(nums);
             
             Console.WriteLine(PathSumIII.PathSum(root, 8));

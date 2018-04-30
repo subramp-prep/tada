@@ -208,5 +208,28 @@ namespace questions
                 return root;
             }
         }
+
+        public static bool IsTreeSymmetric(TreeNode root)
+        {
+            return IsTreeSymmetric(root.left, root.right);
+        }
+
+        private static bool IsTreeSymmetric(TreeNode left, TreeNode right)
+        {
+            if (left == null && right == null)
+            {
+                return true;
+            }
+            else if (left != null && right != null)
+            {
+                return left.val == right.val &&
+                    IsTreeSymmetric(left.left, right.right) &&
+                    IsTreeSymmetric(left.right, right.left);
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

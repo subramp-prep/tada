@@ -47,6 +47,7 @@ namespace questions
 
         // TODO learn from the below soltuion
         // GREAT solution from Discussions section
+        // INTERESTING
         public static int FindMaxLength_Correect(int[] nums)
         {
             Dictionary<int, int> map = new Dictionary<int, int>();

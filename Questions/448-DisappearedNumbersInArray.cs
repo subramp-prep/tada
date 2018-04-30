@@ -17,6 +17,7 @@ namespace questions
     //[5,6]
     public class DisappearedNumbersInArray
     {
+        // INTERESTING
         public static IList<int> FindDisappearedNumbers(int[] nums)
         {
             IList<int> missingNumbers = new List<int>();
