@@ -25,40 +25,37 @@ namespace questions
     
     public class MaxAreaIsland
     {
-        // TODO not complete
         public static int MaxAreaOfIsland(int[,] grid)
         {
-            int count = 0;
-
             int rows = grid.GetLength(0);
             int columns = grid.GetLength(1);
-
+            int max = 0;
             for (int r = 0; r < rows; r++)
             {
                 for (int c = 0; c < columns; c++)
                 {
                     if (grid[r, c] == 1)
                     {
-                        DFSFloodFill(grid, rows - 1, columns - 1, r, c);
-                        count++;
+                        max = Math.Max(max, DFSFloodFill(grid, rows - 1, columns - 1, r, c));
                     }
                 }
             }
 
-            return count;
+            return max;
         }
 
-        private static void DFSFloodFill(int[,] grid, int row, int column, int tRow, int tColumn)
+        private static int DFSFloodFill(int[,] grid, int row, int column, int tRow, int tColumn)
         {
             if (tRow < 0 || tColumn < 0 || tRow > row || tColumn > column || grid[tRow, tColumn] == 0)
-                return;
+                return 0;
 
             grid[tRow, tColumn] = 0;
 
-            DFSFloodFill(grid, row, column, tRow + 1, tColumn);
-            DFSFloodFill(grid, row, column, tRow, tColumn + 1);
-            DFSFloodFill(grid, row, column, tRow - 1, tColumn);
-            DFSFloodFill(grid, row, column, tRow, tColumn - 1);
+            return
+            DFSFloodFill(grid, row, column, tRow + 1, tColumn) +
+            DFSFloodFill(grid, row, column, tRow, tColumn + 1) +
+            DFSFloodFill(grid, row, column, tRow - 1, tColumn) +
+            DFSFloodFill(grid, row, column, tRow, tColumn - 1) + 1;
         }
     }
 }
