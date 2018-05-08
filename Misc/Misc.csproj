@@ -44,8 +44,12 @@
     <Compile Include="Codec.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="FB.md" />
-    <None Include="Google.md" />
+    <None Include="Company\FB.md" />
+    <None Include="Company\Google.md" />
+    <None Include="Company\Amazon.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Company\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
