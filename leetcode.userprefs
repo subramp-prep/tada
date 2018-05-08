@@ -1,8 +1,11 @@
 ﻿<Properties StartupConfiguration="{72282739-2DFD-40DD-883E-F0CBA343DF3E}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="leetcode Status">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Questions/747-LargestIndexTwice.cs">
     <Files>
-      <File FileName="Questions/695-MaxAreaIsland.cs" Line="28" Column="9" />
+      <File FileName="Questions/831-MaskingPersonalInfo.cs" Line="114" Column="21" />
       <File FileName="leetcode Status" />
+      <File FileName="Questions/000Program.cs" Line="17" Column="76" />
+      <File FileName="Questions/695-MaxAreaIsland.cs" Line="21" Column="17" />
+      <File FileName="Questions/747-LargestIndexTwice.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -20,15 +23,14 @@
       <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/067-AddBinary.cs" relfile="Questions/067-AddBinary.cs" line="16" column="1" />
       <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Misc/ToweOfHanoi.cs" relfile="Misc/ToweOfHanoi.cs" line="19" column="1" />
       <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/050-Power.cs" relfile="Questions/050-Power.cs" line="46" column="1" />
-      <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/038-CountAndSay.cs" relfile="Questions/038-CountAndSay.cs" line="56" column="1" />
-      <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/038-CountAndSay.cs" relfile="Questions/038-CountAndSay.cs" line="67" column="1" />
       <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/015-3Sum.cs" relfile="Questions/015-3Sum.cs" line="81" column="1" />
       <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/015-3Sum.cs" relfile="Questions/015-3Sum.cs" line="126" column="1" />
       <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/286-WallNGates.cs" relfile="Questions/286-WallNGates.cs" line="31" column="1" />
       <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Misc/Flatten2DVector.cs" relfile="Misc/Flatten2DVector.cs" line="34" column="1" />
       <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/827-MakingIsland.cs" relfile="Questions/827-MakingIsland.cs" line="37" column="24" />
-      <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/000Program.cs" relfile="Questions/000Program.cs" line="21" column="10" />
       <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/325-MaximumSizeSubarray.cs" relfile="Questions/325-MaximumSizeSubarray.cs" line="53" column="10" />
+      <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/831-MaskingPersonalInfo.cs" relfile="Questions/831-MaskingPersonalInfo.cs" line="119" column="1" />
+      <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/831-MaskingPersonalInfo.cs" relfile="Questions/831-MaskingPersonalInfo.cs" line="102" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

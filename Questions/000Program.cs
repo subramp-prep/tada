@@ -9,7 +9,37 @@ namespace questions
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Test_MaximumSizeSubarray();
+        }
+
+        public static void Test_MaskPersonalInfo()
+        {
+            Console.WriteLine(MaskingPersonalInfo.MaskPII("+86(88)1513-7-74"));
+            Console.WriteLine(MaskingPersonalInfo.MaskPII("1(234)567-890"));
+            Console.WriteLine(MaskingPersonalInfo.MaskPII("LeetCode@LeetCode.com"));
+            Console.WriteLine(MaskingPersonalInfo.MaskPII("AB@qq.com"));
+        }
+
+        public static void Test_PascalTriangle()
+        {
+            var output1 = PascalsTriangle.Generate(1);
+            var output2 = PascalsTriangle.Generate(2);
+            var output3 = PascalsTriangle.Generate(3);
+            var output4 = PascalsTriangle.Generate(4);
+            var output5 = PascalsTriangle.Generate(5);
+            var output6 = PascalsTriangle.Generate(6);
+        }
+
+        public static void Test_LargeGroups()
+        {
+            var output0 = LargerGroups.LargeGroupPositions("abbxxxxzyy");
+            var output1 = LargerGroups.LargeGroupPositions("abc");
+            var output2 = LargerGroups.LargeGroupPositions("abcdddeeeeaabbbcd");
+        }
+
+        public static void Test_ConvertBST()
+        {
+            int[] nums = { -10, -3, 0, 5, 9 };
+            TreeNode root = SortedArrayToBinaryST.SortedArrayToBST(nums);
         }
 
         public static void Test_TreeToString()
