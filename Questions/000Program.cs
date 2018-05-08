@@ -11,6 +11,19 @@ namespace questions
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_LargestTriangle()
+        {
+            int[][] points = {
+                new int[]{0,0},
+                new int[]{0,1},
+                new int[]{1,0},
+                new int[]{0,2},
+                new int[]{2,0},
+            };
+
+            Console.WriteLine(LargestTriangle.LargestTriangleArea(points));
+        }
+
         public static void Test_MaskPersonalInfo()
         {
             Console.WriteLine(MaskingPersonalInfo.MaskPII("+86(88)1513-7-74"));
