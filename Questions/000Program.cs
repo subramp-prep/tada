@@ -11,6 +11,17 @@ namespace questions
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_MergeBT()
+        {
+            int?[] nums1 = { 1, 3, 2, 5 };
+            var root1 = TreeNode.BuildNullableTree(nums1);
+
+            int?[] nums2 = { 2, 1, 3, null, 4, null, 7 };
+            var root2 = TreeNode.BuildNullableTree(nums2);
+
+            var mergedTree = MergeBT.MergeTrees(root1, root2);
+        }
+
         public static void Test_LargestTriangle()
         {
             int[][] points = {
