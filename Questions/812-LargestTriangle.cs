@@ -22,6 +22,8 @@ namespace questions
     {
         // Shoelace algorithm
         // https://en.wikipedia.org/wiki/Shoelace_formula
+        // Space complexity O(1)
+        // Time complexiyt O(pow(n,3))
 
         public static double LargestTriangleArea(int[][] points)
         {

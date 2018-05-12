@@ -11,6 +11,18 @@ namespace questions
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_TwoSumII()
+        {
+            int[] nums = {2, 7, 11, 15 };
+            var result = TwoSumI.TwoSumII(nums, 9);
+        }
+
+        public static void Test_LongestPalindrome()
+        {
+            Console.WriteLine(Longest.LongestPalindrome_DP("madam"));
+            Console.WriteLine(Longest.LongestPalindrome_DP("banana"));
+        }
+
         public static void Test_MergeBT()
         {
             int?[] nums1 = { 1, 3, 2, 5 };
