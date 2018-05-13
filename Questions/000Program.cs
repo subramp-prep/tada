@@ -11,6 +11,24 @@ namespace questions
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_FindNReplace()
+        {
+            int[] indexes = { 0, 2 };
+            string[] sources = {"a", "cd" };
+            string[] targets = { "eee", "ffff" };
+            Console.WriteLine(FindNReplace.FindReplaceString("abcd", indexes, sources, targets));
+        }
+
+        public static void Test_FlipNInvert()
+        {
+            int[][] nums = { 
+                new int[] {1, 1, 0},
+                new int[] {1, 0, 1},
+                new int[] {0, 0, 0},
+            };
+            var result = FilpNInvert.FlipAndInvertImage(nums);
+        }
+
         public static void Test_TwoSumII()
         {
             int[] nums = {2, 7, 11, 15 };
