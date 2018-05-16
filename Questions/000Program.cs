@@ -11,6 +11,20 @@ namespace questions
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_LengthOfSubstringWithoutRepeat()
+        {
+            Console.WriteLine(SubstringWithoutRepeating.LengthOfLongestSubstring("abcabcbb"));
+            Console.WriteLine(SubstringWithoutRepeating.LengthOfLongestSubstring("bbbbb"));
+            Console.WriteLine(SubstringWithoutRepeating.LengthOfLongestSubstring("pwwkew"));
+            Console.WriteLine(SubstringWithoutRepeating.LengthOfLongestSubstring("dvdf"));
+        }
+
+        public static void Test_RotateSum()
+        {
+            int[] nums = { 4, 3, 2, 6};
+            Console.WriteLine(RotateFunction.MaxRotateFunction(nums));
+        }
+
         public static void Test_FindNReplace()
         {
             int[] indexes = { 0, 2 };

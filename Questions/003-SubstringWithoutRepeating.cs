@@ -14,6 +14,29 @@ namespace questions
     {
         public static int LengthOfLongestSubstring(string s)
         {
+            HashSet<int> set = new HashSet<int>();
+
+            int index = 0;
+            int duplicate = 0;
+            int maxLength = 0;
+            while (index < s.Length)
+            {
+                if (!set.Contains(s[index]))
+                {
+                    set.Add(s[index++]);
+                    maxLength = Math.Max(maxLength, set.Count);
+                }
+                else
+                {
+                    set.Remove(s[duplicate++]);
+                }
+            }
+
+            return maxLength;
+        }
+
+        public static int LengthOfLongestSubstring_obs(string s)
+        {
             IList<int> substrings = new List<int>();
             string temp = string.Empty;
 
