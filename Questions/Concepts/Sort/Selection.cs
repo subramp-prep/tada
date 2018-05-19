@@ -11,7 +11,7 @@ namespace questions
 
                 for (int j = i + 1; j < nums.Length; j++)
                 {
-                    if (nums[smallestIndex] > nums[j])
+                    if (nums[j] < nums[smallestIndex])
                     {
                         smallestIndex = j;
                     }

@@ -11,6 +11,40 @@ namespace questions
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_MostCommonWord()
+        {
+            string[] banned = { "hit" };
+            MostCommonWord.MostWords("Bob hit a ball, the hit BALL flew far after it was hit.", banned);
+        }
+
+        public static void Test_MinimumDiffBST()
+        {
+            int?[] nums1 = { 5, 4, 7 };
+            var root1 = TreeNode.BuildNullableTree(nums1);
+            Console.WriteLine(MinAbsDiffBST.GetMinimumDifference(root1));
+            
+            int?[] nums = {1, null, 3, null, null, 2};
+            var root = TreeNode.BuildNullableTree(nums);
+            Console.WriteLine(MinAbsDiffBST.GetMinimumDifference(root));
+        }
+
+        public static void Test_CustomSortString()
+        {
+            string S = "cba";
+            string T = "dabc";
+
+            Console.WriteLine(CustomSort.CustomSortString(S, T));
+        }
+
+        public static void Test_KDiffPair()
+        {
+            int[] nums = { 3, 1, 4, 1, 5 };
+            Console.WriteLine(KDiffPairs.FindPairs(nums, 2));
+
+            int[] nums1 = { 1, 2, 3, 4, 5 };
+            Console.WriteLine(KDiffPairs.FindPairs(nums1, 1));
+        }
+
         public static void Test_LengthOfSubstringWithoutRepeat()
         {
             Console.WriteLine(SubstringWithoutRepeating.LengthOfLongestSubstring("abcabcbb"));
@@ -600,7 +634,7 @@ namespace questions
             
             TreeNode tree = TreeNode.BuildNullableTree(nums);
 
-            var elements = KthLargestElement.FindElements(tree, 3);
+            var elements = KthLargestElement1.FindElements(tree, 3);
         }
 
         public static void Test_BubbleSortOptimum()

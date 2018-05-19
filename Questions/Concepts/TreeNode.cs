@@ -86,6 +86,7 @@ namespace questions
             return root;
         }
 
+        // Left -> Root -> Right
         public static void InOrder(TreeNode root)
         {
             if (root == null)
@@ -98,6 +99,7 @@ namespace questions
             InOrder(root.right);
         }
 
+        // Root -> Left -> Right
         public static void PreOrder(TreeNode root)
         {
             if (root == null)
@@ -110,6 +112,7 @@ namespace questions
             PreOrder(root.right);
         }
 
+        // Left -> Right -> Root
         public static void PostOrder(TreeNode root)
         {
             if (root == null)

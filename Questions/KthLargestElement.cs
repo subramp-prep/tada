@@ -18,7 +18,7 @@ namespace questions
     //                 \
     //                 31
     // and k=3, your function should return {54,, 47, 43}
-    public class KthLargestElement
+    public class KthLargestElement1
     {
         public static IList<int> FindElements(TreeNode root, int k)
         {
