@@ -131,22 +131,40 @@ namespace questions
             }
         }
 
-        public int FindLargest(TreeNode head)
+        public int FindLargest_Recursive(TreeNode head)
         {
             if (head.right == null)
                 return head.val;
 
-            return FindLargest(head.right);
+            return FindLargest_Recursive(head.right);
         }
 
-        public int FindSmallest(TreeNode head)
+        public int FindSmallest_Recursive(TreeNode head)
         {
             if (head.left == null)
             {
                 return head.val;
             }
 
-            return FindSmallest(head.left);
+            return FindSmallest_Recursive(head.left);
+        }
+
+        public int FindSmallest_Iterative(TreeNode head)
+        {
+            if (head == null)
+            {
+                return -1;
+            }
+
+            int min = head.val;
+
+            while (head.left != null)
+            {
+                min = head.left.val;
+                head = head.left;
+            }
+
+            return min;
         }
     }
 }

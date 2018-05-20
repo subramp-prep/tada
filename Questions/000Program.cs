@@ -11,6 +11,14 @@ namespace questions
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_CountBits()
+        {
+            var o1 = CountingBits.CountBits(2);
+            var o2 = CountingBits.CountBits(4);
+            var o3 = CountingBits.CountBits(6);
+            var o4 = CountingBits.CountBits(10);
+        }
+
         public static void Test_MostCommonWord()
         {
             string[] banned = { "hit" };
