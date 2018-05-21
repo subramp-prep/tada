@@ -11,6 +11,19 @@ namespace questions
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_UniquePaths()
+        {
+            Console.WriteLine(TraversePaths.UniquePaths(3, 2));
+
+            Console.WriteLine(TraversePaths.UniquePaths(7,3));
+        }
+
+        public static void Test_FistUnique()
+        {
+            Console.WriteLine(FirstUnique.FirstUniqChar("leetcode"));
+            Console.WriteLine(FirstUnique.FirstUniqChar("loveleetcode"));
+        }
+
         public static void Test_CountBits()
         {
             var o1 = CountingBits.CountBits(2);

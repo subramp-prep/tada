@@ -1,17 +1,25 @@
 ﻿<Properties StartupConfiguration="{72282739-2DFD-40DD-883E-F0CBA343DF3E}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="leetcode Status">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Questions/062-UniquePaths.cs">
     <Files>
-      <File FileName="Questions/338-CountingBits.cs" Line="27" Column="53" />
-      <File FileName="Questions/000Program.cs" Line="11" Column="47" />
+      <File FileName="Questions/338-CountingBits.cs" Line="30" Column="27" />
+      <File FileName="Questions/000Program.cs" Line="19" Column="1" />
+      <File FileName="Misc/Company/Amazon.md" Line="62" Column="84" />
+      <File FileName="Questions/387-FirstUnique.cs" Line="1" Column="1" />
+      <File FileName="Questions/019-RemoveNNodeFromEnd.cs" Line="1" Column="1" />
+      <File FileName="Questions/020-ValidParentheses.cs" Line="1" Column="1" />
       <File FileName="leetcode Status" />
+      <File FileName="Questions/831-MaskingPersonalInfo.cs" Line="1" Column="1" />
+      <File FileName="Questions/830-LargerGroups.cs" Line="6" Column="76" />
+      <File FileName="Questions/062-UniquePaths.cs" Line="49" Column="12" />
+      <File FileName="Misc/Program.cs" Line="182" Column="27" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="leetcode" expanded="True">
+            <Node name="Misc" expanded="True" />
             <Node name="Questions" expanded="True">
-              <Node name="Concepts" expanded="True" />
-              <Node name="000Program.cs" selected="True" />
+              <Node name="062-UniquePaths.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -38,7 +46,8 @@
       <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/827-MakingIsland.cs" relfile="Questions/827-MakingIsland.cs" line="37" column="24" />
       <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/325-MaximumSizeSubarray.cs" relfile="Questions/325-MaximumSizeSubarray.cs" line="53" column="10" />
       <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/819-MostCommonWord.cs" relfile="Questions/819-MostCommonWord.cs" line="41" column="10" />
-      <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/000Program.cs" relfile="Questions/000Program.cs" line="19" column="49" />
+      <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/062-UniquePaths.cs" relfile="Questions/062-UniquePaths.cs" line="35" column="10" />
+      <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/062-UniquePaths.cs" relfile="Questions/062-UniquePaths.cs" line="51" column="22" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
