@@ -9,6 +9,13 @@ namespace questions
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            Test_Palindromic();
+        }
+
+        public static void Test_Palindromic()
+        {
+            var o1 = Palindromic.Partition("aab");
+            var o2 = Palindromic.Partition("02024451881");
         }
 
         public static void Test_UniquePaths()

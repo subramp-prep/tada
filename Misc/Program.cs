@@ -8,7 +8,6 @@ namespace Misc
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Test_TwoSum();
         }
 
         public static void Test_TwoSum()
