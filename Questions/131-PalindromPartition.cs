@@ -36,13 +36,13 @@ namespace questions
         {
             IList<IList<string>> output = new List<IList<string>>();
 
-            Stack<string> path = new Stack<string>();
+            List<string> path = new List<string>();
             dfs(0, s, path, output);
 
             return output;
         }
 
-        private static void dfs(int index, string s, Stack<string> path, IList<IList<string>> output)
+        private static void dfs(int index, string s, List<string> path, IList<IList<string>> output)
         {
             if (index == s.Length)
             {
@@ -54,9 +54,9 @@ namespace questions
                 {
                     if (IsPalindrome(s, index, i))
                     {
-                        path.Push(s.Substring(index, i - index + 1));
+                        path.Add(s.Substring(index, i - index + 1));
                         dfs(i+1, s, path, output);
-                        path.Pop();
+                        path.RemoveAt(path.Count-1);
                     }
                 }
             }

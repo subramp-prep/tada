@@ -3,6 +3,14 @@
     <Files>
       <File FileName="Questions/831-MaskingPersonalInfo.cs" Line="1" Column="1" />
       <File FileName="Questions/830-LargerGroups.cs" Line="56" Column="27" />
+      <File FileName="Questions/039-CombinationSum.cs" Line="32" Column="14" />
+      <File FileName="Questions/000Program.cs" Line="11" Column="47" />
+      <File FileName="Log" />
+      <File FileName="Questions/141-LLCycle.cs" Line="1" Column="1" />
+      <File FileName="Questions/131-PalindromPartition.cs" Line="43" Column="1" />
+      <File FileName="Questions/078-Subsets.cs" Line="33" Column="1" />
+      <File FileName="Questions/90-SubsetsII.cs" Line="33" Column="10" />
+      <File FileName="Questions/047-PermutationsII.cs" Line="28" Column="1" />
       <File FileName="leetcode Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
@@ -29,6 +37,8 @@
       <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/062-UniquePaths.cs" relfile="Questions/062-UniquePaths.cs" line="35" column="10" />
       <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/062-UniquePaths.cs" relfile="Questions/062-UniquePaths.cs" line="58" column="22" />
       <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/131-PalindromPartition.cs" relfile="Questions/131-PalindromPartition.cs" line="42" column="27" />
+      <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/078-Subsets.cs" relfile="Questions/078-Subsets.cs" line="32" column="27" />
+      <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/90-SubsetsII.cs" relfile="Questions/90-SubsetsII.cs" line="32" column="27" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

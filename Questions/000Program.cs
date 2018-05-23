@@ -9,7 +9,18 @@ namespace questions
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Test_Palindromic();
+        }
+
+        public static void Test_PermutationsII()
+        {
+            int[] nums = { 1, 1, 2 };
+            PermutationsII.PermuteUnique(nums);
+        }
+
+        public static void Test_SubsetsII()
+        {
+            int[] nums = { 1, 2, 2};
+            SubsetsII.SubsetsWithDup(nums);
         }
 
         public static void Test_Palindromic()
