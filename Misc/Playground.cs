@@ -6,6 +6,16 @@ namespace Misc
 {
     public class Playground
     {
+        public static void RandomizeArray(int[] nums)
+        {
+            Random random = new Random();
+            for (int i = 0; i < nums.Length; i++)
+            {
+                int rand = random.Next(nums.Length-1);
+                swap(ref nums[i], ref nums[rand]);
+            }
+        }
+
         public static int[] TwoSum(int[] nums, int target)
         {
             IDictionary<int, int> elements = new Dictionary<int, int>();

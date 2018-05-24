@@ -8,6 +8,14 @@ namespace Misc
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            Test_RandomizeArray();
+        }
+
+        public static void Test_RandomizeArray()
+        {
+            int[] nums = {1,2,3,4,5,6,7,8 };
+            Playground.RandomizeArray(nums);
         }
 
         public static void Test_TwoSum()

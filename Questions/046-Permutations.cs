@@ -22,33 +22,55 @@ namespace questions
             IList<IList<int>> output = new List<IList<int>>();
 
             List<int> chosen = new List<int>();
-            PermuteHelper(nums.ToList(), chosen, output);
+            PermuteHelper(nums, chosen, output);
             return output;
         }
 
-        private static void PermuteHelper(List<int> input, List<int> chosen, IList<IList<int>> output)
+        private static void PermuteHelper(int[] input, List<int> chosen, IList<IList<int>> output)
         {
-            if (input.Count == 0)
+            if (input.Length == chosen.Count)
             {
-                output.Add(chosen.ToArray());
+                output.Add(new List<int>(chosen));
             }
             else
             {
-                for (int index = 0; index < input.Count(); index++)
+                for (int i = 0; i < input.Length; i++)
                 {
-                    //choose
-                    int c = input[index];
-                    chosen.Add(c);
-                    input.Remove(input[index]);
+                    if (chosen.Contains(input[i]))
+                    {
+                        continue;
+                    }
 
-                    //explore
+                    chosen.Add(input[i]);
                     PermuteHelper(input, chosen, output);
-
-                    //unchoose
-                    chosen.RemoveAt(chosen.Count() - 1);
-                    input.Insert(index, c);
+                    chosen.RemoveAt(chosen.Count - 1);
                 }
             }
         }
+
+        //private static void PermuteHelperI(List<int> input, List<int> chosen, IList<IList<int>> output)
+        //{
+        //    if (input.Count == 0)
+        //    {
+        //        output.Add(chosen.ToArray());
+        //    }
+        //    else
+        //    {
+        //        for (int index = 0; index < input.Count(); index++)
+        //        {
+        //            //choose
+        //            int c = input[index];
+        //            chosen.Add(c);
+        //            input.Remove(input[index]);
+
+        //            //explore
+        //            PermuteHelper(input, chosen, output);
+
+        //            //unchoose
+        //            chosen.RemoveAt(chosen.Count() - 1);
+        //            input.Insert(index, c);
+        //        }
+        //    }
+        //}
     }
 }

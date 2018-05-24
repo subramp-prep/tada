@@ -11,6 +11,12 @@ namespace questions
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_Permutation()
+        {
+            int[] nums = { 1, 2, 3 };
+            var combo = Permutations.Permute(nums);
+        }
+
         public static void Test_PermutationsII()
         {
             int[] nums = { 1, 1, 2 };
