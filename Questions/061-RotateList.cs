@@ -10,17 +10,16 @@ namespace questions
     {
         public static ListNode RotateRight(ListNode head, int k)
         {
-            ListNode temp = head;
             ListNode tail = head;
             int count = 1;
-
             while (tail.next != null)
             {
                 tail = tail.next;
                 count++;
             }
 
-            tail.next = head; // connected head to tail to make circular list
+            // connect head to tail to make circular list
+            tail.next = head; 
 
             k %= count;
             int pivot = count - k;

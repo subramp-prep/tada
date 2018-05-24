@@ -377,6 +377,13 @@ namespace questions
 
         public static void Test_MergeInterval()
         {
+            IList<int[]> input2 = new List<int[]>();
+            input2.Add(new int[] { 1, 4 });
+            input2.Add(new int[] { 0, 4 });
+
+            var intervals2 = Interval.CreateMany(input2);
+            MergeIntervals.Merge(intervals2);
+
             IList<int[]> input1 = new List<int[]>();
             input1.Add(new int[] { 1, 4 });
             input1.Add(new int[] { 5, 6 });

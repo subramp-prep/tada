@@ -14,6 +14,35 @@ namespace questions
     {
         public static IList<Interval> Merge(IList<Interval> intervals)
         {
+            IList<Interval> result = new List<Interval>();
+            if (intervals != null && intervals.Count <= 0)
+            {
+                return result;
+            }
+
+            Interval[] sortedArray = intervals.ToArray();
+            Array.Sort(sortedArray, (Interval x, Interval y) => { return x.start.CompareTo(y.start); });
+
+            result.Add(sortedArray[0]);
+
+            for (int i =1; i < sortedArray.Length; i++)
+            {
+                if(result.Last().end < sortedArray[i].start)
+                {
+                    result.Add(sortedArray[i]);
+                }
+                else
+                {
+                    result.Last().end = Math.Max(result.Last().end, sortedArray[i].end);
+                }
+            }
+
+            return result;
+        }
+
+        // Below implementation was a BUST!
+        public static IList<Interval> Merge_gut(IList<Interval> intervals)
+        {
             // TODO fails to add first element
             Array.Sort(intervals.ToArray(), (x, y) => x.start - y.start);
 
