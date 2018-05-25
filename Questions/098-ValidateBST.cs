@@ -33,16 +33,13 @@ namespace questions
         //private static bool IsValidBST(TreeNode root, int min, int max)
         //{
         //    if (root == null) return true;
-
         //    if (root.val < min || root.val > max)
         //        return false;
-
         //    if(!IsValidBST(root.left, min, root.val) ||
         //       !IsValidBST(root.right, root.val, max))
         //    {
         //        return false;
         //    }
-
         //    return true;
         //}
 

@@ -11,6 +11,22 @@ namespace questions
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_Toeplitz()
+        {
+            int[,] matrix = {
+                {1,2,3,4},
+                {5,1,2,3},
+                {9,5,1,2}
+            };
+            Console.WriteLine(Toeplitz.IsToeplitzMatrix(matrix));
+
+            int[,] matrix1 = {
+                {1,2},
+                {2,2}
+            };
+            Console.WriteLine(Toeplitz.IsToeplitzMatrix(matrix1));
+        }
+
         public static void Test_Permutation()
         {
             int[] nums = { 1, 2, 3 };
@@ -867,11 +883,13 @@ namespace questions
 
         public static void Test_MergeSortedArray()
         {
-            int[] num1 = { 0, 0 };
-            int[] num2 = { 1 };
+            int[] num3 = { 0 };
+            int[] num4 = { 1 };
+            MergeSortedArray.Merge(num3, 0, num4, 1);
 
-
-            MergeSortedArray.Merge(num1, 1, num2, num2.Length);
+            int[] num1 = { 1, 2, 3, 0, 0, 0 };
+            int[] num2 = { 2, 5, 6 };
+            MergeSortedArray.Merge(num1, 3, num2, 3);
         }
 
         public static void Test_SearcRotatedSortArray()
