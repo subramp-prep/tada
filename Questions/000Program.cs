@@ -9,6 +9,32 @@ namespace questions
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            //Test_ShiftingLetters();
+        }
+
+        public static void Test_Transpose()
+        {
+            int[][] nums = { 
+                new int[]{1,2,3},
+                new int[]{4,5,6}
+                //new int[]{7,8,9},
+            };
+
+            var matrix = TransposeMatrix.Transpose(nums);
+        }
+
+        public static void Test_ShiftingLetters()
+        {
+            int[] nums = { 3, 5, 9 };
+            Shifting.ShiftingLetters("abc", nums);
+        }
+
+        public static void Test_BackspaceComp()
+        {
+            Console.WriteLine(BackspaceStringCompare.BackspaceCompare("ab#c", "ad#c"));
+            Console.WriteLine(BackspaceStringCompare.BackspaceCompare("ab##", "c#d#"));
+            Console.WriteLine(BackspaceStringCompare.BackspaceCompare("a##c", "#a#c"));
+            Console.WriteLine(BackspaceStringCompare.BackspaceCompare("a#c", "b"));
         }
 
         public static void Test_Toeplitz()
