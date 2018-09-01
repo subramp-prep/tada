@@ -9,7 +9,31 @@ namespace questions
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Test_ReorderdPower2();
+        }
+
+        public static void Test_RemoveDupFromSortedLL()
+        {
+            ListNode node1 = new ListNode(1)
+            {
+                next = new ListNode(1)
+                {
+                    next = new ListNode(2)
+                    {
+                        next = new ListNode(2)
+                        {
+                            next = new ListNode(3)
+                            {
+                                next = new ListNode(56)
+                                {
+                                    next = new ListNode(56)
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+
+            var resultLL = RemoveDup.DeleteDuplicates(node1);
         }
 
         public static void Test_ReorderdPower2()
