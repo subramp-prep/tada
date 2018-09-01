@@ -1,11 +1,12 @@
 ﻿<Properties StartupConfiguration="{72282739-2DFD-40DD-883E-F0CBA343DF3E}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Questions/848-ShiftingLetters.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="leetcode Status">
     <Files>
-      <File FileName="Questions/000Program.cs" Line="12" Column="38" />
-      <File FileName="Questions/868-Transpose.cs" Line="31" Column="24" />
+      <File FileName="Questions/000Program.cs" Line="12" Column="35" />
+      <File FileName="Questions/869-ReorderPower.cs" Line="58" Column="14" />
+      <File FileName="Questions/019-RemoveNNodeFromEnd.cs" Line="1" Column="1" />
+      <File FileName="Questions/Concepts/GraphNode.cs" Line="48" Column="33" />
+      <File FileName="Questions/237-DeleteNodeLL.cs" Line="48" Column="1" />
       <File FileName="leetcode Status" />
-      <File FileName="Questions/844-BackspaceStringCompare.cs" Line="1" Column="1" />
-      <File FileName="Questions/848-ShiftingLetters.cs" Line="22" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -36,7 +37,7 @@
       <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Misc/Playground.cs" relfile="Misc/Playground.cs" line="17" column="10" />
       <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/056-MergeIntervals.cs" relfile="Questions/056-MergeIntervals.cs" line="16" column="10" />
       <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/088-MergeSortedArray.cs" relfile="Questions/088-MergeSortedArray.cs" line="22" column="10" />
-      <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/848-ShiftingLetters.cs" relfile="Questions/848-ShiftingLetters.cs" line="8" column="10" />
+      <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/848-ShiftingLetters.cs" relfile="Questions/848-ShiftingLetters.cs" line="9" column="10" />
       <Breakpoint file="/Users/sowmiya/Documents/Github/leetcode/Questions/868-Transpose.cs" relfile="Questions/868-Transpose.cs" line="27" column="10" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

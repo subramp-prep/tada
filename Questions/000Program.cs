@@ -9,7 +9,12 @@ namespace questions
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            //Test_ShiftingLetters();
+            Test_ReorderdPower2();
+        }
+
+        public static void Test_ReorderdPower2()
+        {
+            ReorderPower.ReorderedPowerOf2(3);
         }
 
         public static void Test_Transpose()
