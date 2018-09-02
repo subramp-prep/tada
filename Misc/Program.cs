@@ -9,7 +9,12 @@ namespace Misc
         {
             Console.WriteLine("Hello World!");
 
-            Test_RandomizeArray();
+            Test_SortedArray();
+        }
+
+        public static void Test_SortedArray()
+        {
+            MergeSortedArray.PrintMergeList();
         }
 
         public static void Test_RandomizeArray()

@@ -11,6 +11,70 @@ namespace questions
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_OrderlyQ()
+        {
+            Console.WriteLine(OrderlyQ.OrderlyQueue("cba", 1));
+            Console.WriteLine(OrderlyQ.OrderlyQueue("baaca", 3));
+        }
+
+        public static void Test_IncreasingST()
+        {
+            int?[] nums = { 5, 3, 6, 2, 4, null, 8, 1, null, null, null, 7, 9};
+
+            TreeNode root = TreeNode.BuildNullableTree(nums);
+
+            var result = IncreasingST.IncreasingBST(root);
+        }
+
+        public static void Test_BitwiseSubarray()
+        {
+            int[] nums = { 1, 1, 2 };
+            Console.WriteLine(BitwiseSubarray.SubarrayBitwiseORs(nums));
+
+            int[] nums1 = {1,2,4};
+            Console.WriteLine(BitwiseSubarray.SubarrayBitwiseORs(nums1));
+        }
+
+        public static void Test_ArrayMontone()
+        {
+            int[] nums1 = { 1, 2, 2, 3};
+            Console.WriteLine(MonotonicArray.IsMonotonic(nums1));
+
+            int[] nums2 = { 6, 5, 4, 4 };
+            Console.WriteLine(MonotonicArray.IsMonotonic(nums2));
+
+            int[] nums3 = { 1, 3, 2 };
+            Console.WriteLine(MonotonicArray.IsMonotonic(nums3));
+
+            int[] nums4 = { 1, 2, 4, 5 };
+            Console.WriteLine(MonotonicArray.IsMonotonic(nums4));
+
+            int[] nums5 = { 1, 1, 1 };
+            Console.WriteLine(MonotonicArray.IsMonotonic(nums5));
+        }
+
+        public static void Test_RemoveDupFromSortedLLII()
+        {
+            ListNode node = new ListNode(1)
+            {
+                next = new ListNode(1)
+                {
+                    next = new ListNode(1)
+                    {
+                        next = new ListNode(2)
+                        {
+                            next = new ListNode(3)
+                            {
+                                next = null
+                            }
+                        }
+                    }
+                }
+            };
+
+            RemoveDuplicateII.DeleteDuplicates(node);
+        }
+
         public static void Test_RemoveDupFromSortedLL()
         {
             ListNode node1 = new ListNode(1)
