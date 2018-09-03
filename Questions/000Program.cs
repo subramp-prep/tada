@@ -11,6 +11,18 @@ namespace questions
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_FindAllAnagrams()
+        {
+            var result_1 = FindAllAnagrams.FindAnagrams("cbaebabacd", "abc");
+            var result_2 = FindAllAnagrams.FindAnagrams("abab", "ab");
+        }
+
+        public static void Test_MinWindowSubstring()
+        {
+            Console.WriteLine(MinWindowSubstring.MinWindow("arab", "aba"));
+            Console.WriteLine(MinWindowSubstring.MinWindow("ADOBECODEBANC", "ABC"));
+        }
+
         public static void Test_OrderlyQ()
         {
             Console.WriteLine(OrderlyQ.OrderlyQueue("cba", 1));
