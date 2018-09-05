@@ -9,6 +9,13 @@ namespace questions
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            Test_ValidParentheses();
+        }
+
+        public static void Test_ValidParentheses()
+        {
+            ValidParentheses.IsValid_Optimum("()");
         }
 
         public static void Test_FindAllAnagrams()

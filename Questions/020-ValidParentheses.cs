@@ -33,6 +33,40 @@ namespace questions
     //Output: true
     public class ValidParentheses
     {
+        public static bool IsValid_Optimum(string s)
+        {
+            Stack<char> stack = new Stack<char>();
+            foreach (var c in s)
+            {
+                switch (c)
+                {
+                    case '(':
+                        stack.Push(')');
+                        break;
+
+                    case '[':
+                        stack.Push(']');
+                        break;
+
+                    case '{':
+                        stack.Push('}');
+                        break;
+
+                    default:
+
+                        // NOTE: the order of the if block
+                        // matters to get the count and return
+                        if (stack.Count == 0)
+                            return false;
+                        else if (stack.Pop() != c)
+                            return false;
+                        break;
+                }
+            }
+
+            return stack.Count == 0;
+        }
+
         public static bool IsValid(string s)
         {
             Dictionary<char, char> bracesLookup = new Dictionary<char, char>();

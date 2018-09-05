@@ -26,7 +26,7 @@ namespace questions
             int begin = 0, end = 0;
 
             //the length of the substring which match the target string.
-            int len = int.MaxValue;
+            // int len = int.MaxValue;
 
             //loop at the begining of the source string
             while (end < s.Length)
