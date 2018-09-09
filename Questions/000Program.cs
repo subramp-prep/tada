@@ -9,8 +9,15 @@ namespace questions
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+        }
 
-            Test_ValidParentheses();
+        public static void Test_PermutationString()
+        {
+            Console.WriteLine("Test: {0} Input: {1} Result: {2}", 
+                              "ab", "eidbaooo", PermutationString.CheckInclusion("ab", "eidbaooo"));
+
+            Console.WriteLine("Test: {0} Input: {1} Result: {2}",
+                              "ab", "eidboaoo", PermutationString.CheckInclusion("ab", "eidboaoo"));
         }
 
         public static void Test_ValidParentheses()

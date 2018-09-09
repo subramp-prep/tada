@@ -44,11 +44,11 @@ namespace questions
                 }
             }
 
-            List<Tuple<int, int>> dirs = new List<Tuple<int, int>>();
-            dirs.Add(new Tuple<int, int>(1, 0));
-            dirs.Add(new Tuple<int, int>(0, 1));
-            dirs.Add(new Tuple<int, int>(-1, 0));
-            dirs.Add(new Tuple<int, int>(0, -1));
+            List<Tuple<int, int>> directions = new List<Tuple<int, int>>();
+            directions.Add(new Tuple<int, int>(1, 0));
+            directions.Add(new Tuple<int, int>(0, 1));
+            directions.Add(new Tuple<int, int>(-1, 0));
+            directions.Add(new Tuple<int, int>(0, -1));
 
             while (reachable.Count > 0)
             {
@@ -57,10 +57,11 @@ namespace questions
                 var currentX = current.Item1;
                 var currentY = current.Item2;
 
-                foreach (var dir in dirs)
+                foreach (var direction in directions)
                 {
-                    int x = currentX + dir.Item1;
-                    int y = currentY + dir.Item2;
+                    int x = currentX + direction.Item1;
+                    int y = currentY + direction.Item2;
+
                     if (x < 0 || y < 0 || 
                         x >= row || y >= column ||
                         rooms[x,y] <= rooms[currentX, currentY] + 1)
