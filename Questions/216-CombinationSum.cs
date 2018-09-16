@@ -21,6 +21,7 @@ namespace questions
 
     partial class CombinationSum
     {
+        // TODO optimize this weekend 09/05/2018
         public static IList<IList<int>> CombinationSum3(int k, int n)
         {
             IList<IList<int>> output = new List<IList<int>>();

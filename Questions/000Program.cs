@@ -11,6 +11,21 @@ namespace questions
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_SortArray()
+        {
+            int[] nums1 = { 1, 0, 2 };
+            var result = SortArray.SortArrayByParity(nums1);
+
+            int[] nums3 = { 1,2, 3 };
+            result = SortArray.SortArrayByParity(nums3);
+
+            int[] nums2 = { 3, 1 };
+            result = SortArray.SortArrayByParity(nums2);
+
+            int[] nums = { 3,1,2, 4 };
+            result = SortArray.SortArrayByParity(nums);
+        }
+
         public static void Test_PermutationString()
         {
             Console.WriteLine("Test: {0} Input: {1} Result: {2}", 
