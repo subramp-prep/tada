@@ -6,6 +6,88 @@ namespace Misc
 {
     public class Playground
     {
+        public static string DecMessage(string word)
+        {
+            var secondStep = 1;
+            var decryption = "";
+
+            for (int i = 0; i < word.Length; i++)
+            {
+                int newLetterAscii = word[i];
+                newLetterAscii = newLetterAscii - secondStep;
+
+                while (newLetterAscii < 'a')
+                {
+                    newLetterAscii = newLetterAscii + 26;
+                }
+
+                decryption = decryption + (char)newLetterAscii;
+                secondStep += newLetterAscii;
+            }
+
+            return decryption;
+        }
+
+        public static string Decrypt(string word)
+        {
+            // your code goes here
+
+            string output = string.Empty;
+            char c = (char)(word[0] - 1);
+
+            //int oneTime = 1;
+            output = c.ToString();
+
+            int sum = (int)word[0];
+            for (int i = 1; i < word.Length; i++)
+            {
+                sum += word[i];
+
+                int diff = sum;
+                while (diff  > 'z')
+                {
+                    diff -= 'a';
+                }
+
+                output = output + (char)(diff + 1);
+            }
+
+            return output;
+        }
+
+        public static int RemoveDuplicates(int[] nums)
+        {
+            int index = 0;
+
+            for (int i = 1; i < nums.Length; i++)
+            {
+                if(nums[i-1] != nums[i])
+                {
+                    index++;
+                    nums[index] = nums[i];
+                }
+            }
+
+            return index+1;
+        }
+
+        public static string GetShortestUniqueSubstring(char[] arr, string str)
+        {
+            int startIndex = 0;
+            int lastIndex = str.Length;
+
+            Array.Sort(arr);
+
+            while (startIndex > lastIndex)
+            {
+                string test = str.Substring(startIndex, lastIndex);
+                char[] testArr = test.ToCharArray();
+                Array.Sort(testArr);
+            }
+
+            return "";
+        }
+
         public static void RandomizeArray(int[] nums)
         {
             Random random = new Random();

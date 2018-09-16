@@ -11,6 +11,17 @@ namespace questions
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_TreePathSum()
+        {
+            int?[] nums = { 5,4,8,11,null,13,4, 7,2, null, null, null, 1};
+            TreeNode tree = TreeNode.BuildNullableTree(nums);
+            Console.WriteLine(PathSum.HasPathSum(tree, 22));
+
+            int?[] nums1 = { 1 };
+            TreeNode tree1 = TreeNode.BuildNullableTree(nums1);
+            Console.WriteLine(PathSum.HasPathSum(tree1, 0));
+        }
+
         public static void Test_SortArray()
         {
             int[] nums1 = { 1, 0, 2 };

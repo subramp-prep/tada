@@ -9,7 +9,15 @@ namespace Misc
         {
             Console.WriteLine("Hello World!");
 
-            Test_SortedArray();
+            Console.WriteLine(Playground.DecMessage("dnotq"));
+
+        }
+
+        public static void Test_SmallestSubarray()
+        {
+            char[] arr = { 'x', 'y', 'z' };
+            string str = "xyyzyzyx";
+            Console.WriteLine(Playground.GetShortestUniqueSubstring(arr, str));
         }
 
         public static void Test_SortedArray()
