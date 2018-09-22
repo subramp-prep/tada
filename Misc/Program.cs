@@ -9,8 +9,16 @@ namespace Misc
         {
             Console.WriteLine("Hello World!");
 
-            Console.WriteLine(Playground.DecMessage("dnotq"));
+            Test_Evaluate();
+        }
 
+        public static void Test_Evaluate()
+        {
+            //Console.WriteLine(AddSub.Evaluate("add    ( add (1, 5) ,    sub(4,2)   )"));
+
+            Console.WriteLine(AddSub.Evaluate("add    ( 1 ,    2   )"));
+            Console.WriteLine(AddSub.Evaluate("sub    ( 2 ,    5   )"));
+            Console.WriteLine(AddSub.Evaluate("add    ( 4 ,    23   )"));
         }
 
         public static void Test_SmallestSubarray()

@@ -43,6 +43,7 @@
     <Compile Include="Playground.cs" />
     <Compile Include="Codec.cs" />
     <Compile Include="MergeSortedArray.cs" />
+    <Compile Include="AddSub.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Company\FB.md" />
