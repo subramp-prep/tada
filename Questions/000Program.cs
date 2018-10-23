@@ -11,6 +11,13 @@ namespace questions
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_SubarraySum()
+        {
+            Console.WriteLine(SubarraySum.Count(new int[]{1,1,1}, 2));
+            Console.WriteLine(SubarraySum.Count(new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 0));
+            Console.WriteLine(SubarraySum.Count(new int[] { 1, 2, 1, 2, 1 }, 3));
+        }
+
         public static void Test_TreePathSum()
         {
             int?[] nums = { 5,4,8,11,null,13,4, 7,2, null, null, null, 1};
