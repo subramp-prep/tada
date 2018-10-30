@@ -44,6 +44,7 @@
     <Compile Include="Codec.cs" />
     <Compile Include="MergeSortedArray.cs" />
     <Compile Include="DailyCoding\TreeEvaluation.cs" />
+    <Compile Include="DailyCoding\SumOfArarayNumbers.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Company\FB.md" />

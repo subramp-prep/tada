@@ -10,6 +10,13 @@ namespace Misc
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_SumOfArarayNumbers()
+        {
+            Console.WriteLine(SumOfArarayNumbers.DoesSumExist(new int[] { 10, 15, 3, 7 }, 17));
+            Console.WriteLine(SumOfArarayNumbers.DoesSumExist(new int[] { 2, 3, 1, 5 }, 9));
+            Console.WriteLine(SumOfArarayNumbers.DoesSumExist(new int[] { 2, 3, 1, 5 }, 4));
+        }
+
         public static void Test_TreeEvaluation()
         {
             TreeEvaluation eval = new TreeEvaluation();
