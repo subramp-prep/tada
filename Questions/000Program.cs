@@ -11,6 +11,12 @@ namespace questions
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_SubarraySumII()
+        {
+            //Console.WriteLine(SubarraySumII.CheckSubarraySum(new int[]{23, 2, 4, 6, 7}, 6));
+            Console.WriteLine(SubarraySumII.CheckSubarraySum(new int[] { 10, 8, 17, 3, 4, 7, 1, 2 }, 7));
+        }
+
         public static void Test_SubarraySum()
         {
             Console.WriteLine(SubarraySum.Count(new int[]{1,1,1}, 2));

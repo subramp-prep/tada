@@ -43,7 +43,7 @@
     <Compile Include="Playground.cs" />
     <Compile Include="Codec.cs" />
     <Compile Include="MergeSortedArray.cs" />
-    <Compile Include="AddSub.cs" />
+    <Compile Include="DailyCoding\TreeEvaluation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Company\FB.md" />
@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Company\" />
+    <Folder Include="DailyCoding\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

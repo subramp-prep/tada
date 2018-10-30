@@ -8,17 +8,24 @@ namespace Misc
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+        }
 
-            Test_Evaluate();
+        public static void Test_TreeEvaluation()
+        {
+            TreeEvaluation eval = new TreeEvaluation();
+            string[] exp = { "*", "+", "+", "3", "2", "4", "5" };
+            var root = eval.BuildTree(exp, 0, null);
+
+            Console.WriteLine(eval.Evaluate(root));
         }
 
         public static void Test_Evaluate()
         {
             //Console.WriteLine(AddSub.Evaluate("add    ( add (1, 5) ,    sub(4,2)   )"));
 
-            Console.WriteLine(AddSub.Evaluate("add    ( 1 ,    2   )"));
-            Console.WriteLine(AddSub.Evaluate("sub    ( 2 ,    5   )"));
-            Console.WriteLine(AddSub.Evaluate("add    ( 4 ,    23   )"));
+            //Console.WriteLine(AddSub.Evaluate_Again("add    ( 1 ,    2   )"));
+            //Console.WriteLine(AddSub.Evaluate_Again("sub    ( 2 ,    5   )"));
+            //Console.WriteLine(AddSub.Evaluate_Again("add    ( 4 ,    23   )"));
         }
 
         public static void Test_SmallestSubarray()
