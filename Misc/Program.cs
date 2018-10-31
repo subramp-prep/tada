@@ -10,6 +10,12 @@ namespace Misc
             Console.WriteLine("Hello World!");
         }
 
+        public static void Test_ProductWithoutIndex()
+        {
+            var r1 = ProductWithoutIndex.Product(new int[] { 1, 2, 3, 4, 5 });
+            var r2 = ProductWithoutIndex.Product(new int[] { 45, 23, 67, 23, 52 });
+        }
+
         public static void Test_SumOfArarayNumbers()
         {
             Console.WriteLine(SumOfArarayNumbers.DoesSumExist(new int[] { 10, 15, 3, 7 }, 17));

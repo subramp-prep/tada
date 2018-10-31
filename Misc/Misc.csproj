@@ -43,8 +43,9 @@
     <Compile Include="Playground.cs" />
     <Compile Include="Codec.cs" />
     <Compile Include="MergeSortedArray.cs" />
-    <Compile Include="DailyCoding\TreeEvaluation.cs" />
-    <Compile Include="DailyCoding\SumOfArarayNumbers.cs" />
+    <Compile Include="DailyCoding\050-TreeEvaluation.cs" />
+    <Compile Include="DailyCoding\001-SumOfArarayNumbers.cs" />
+    <Compile Include="DailyCoding\020-ProductWithoutIndex.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Company\FB.md" />
